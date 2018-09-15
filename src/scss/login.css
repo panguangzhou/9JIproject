@@ -43,32 +43,32 @@ header ul li:nth-child(3) a {
   color: red;
   border-bottom: 1px solid red; }
 
-#main .demo h5 .common {
+#main .demo h5 #common {
   margin-left: 30px;
   margin-right: 26px; }
 
 #main .demo h5 .reg {
   margin-left: 67px; }
 
-#main .demo .item {
+#main .demo .item_common {
   border-top: 1px solid #ccc;
   height: 307px;
   padding: 26px 0 0 30px; }
 
-#main .demo .item #username,
-#main .demo .item #password {
+#main .demo .item_common #username,
+#main .demo .item_common #password {
   border: 1px solid #d6d6d6;
   height: 34px;
   width: 268px; }
 
-#main .demo .item #password {
+#main .demo .item_common #password {
   margin-top: 20px;
   margin-bottom: 19px; }
 
-#main .demo .item li:nth-child(3) {
+#main .demo .item_common li:nth-child(3) {
   font-size: 13px; }
 
-#main .demo .item #btn {
+#main .demo .item_common #btn {
   width: 270px;
   height: 40px;
   text-align: center;
@@ -77,16 +77,16 @@ header ul li:nth-child(3) a {
   marign-top: 11px;
   background: red; }
 
-#main .demo .item .list_p {
+#main .demo .item_common .list_p {
   width: 200px; }
 
-#main .demo .item .list_p h3 {
+#main .demo .item_common .list_p h3 {
   font-size: 12px;
   line-height: 32px;
   color: #999999; }
 
-#main .demo .item .list_p .weixin,
-#main .demo .item .list_p .qq {
+#main .demo .item_common .list_p .weixin,
+#main .demo .item_common .list_p .qq {
   display: inline-block;
   width: 67px;
   height: 27px;
@@ -98,21 +98,21 @@ header ul li:nth-child(3) a {
   border-radius: 3px;
   margin-right: 20px; }
 
-#main .demo .item .list_p .weixin i,
-#main .demo .item .list_p .qq i {
+#main .demo .item_common .list_p .weixin i,
+#main .demo .item_common .list_p .qq i {
   display: inline-block;
   width: 16px;
   height: 16px;
   vertical-align: middle;
   margin-right: 5px; }
 
-#main .demo .item .list_p .weixin i {
+#main .demo .item_common .list_p .weixin i {
   background: url(../img/icon_v1.png) -128px -96px no-repeat; }
 
-#main .demo .item .list_p .qq i {
+#main .demo .item_common .list_p .qq i {
   background: url(../img/icon_v1.png) -49px 0 no-repeat; }
 
-#main .demo .item .code {
+#main .demo .item_common .code {
   position: absolute;
   bottom: 0;
   right: 0;

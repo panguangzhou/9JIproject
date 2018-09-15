@@ -23,7 +23,7 @@ header ul li:nth-child(3) a{
 	background:url(../img/login_main.jpg) no-repeat;
 	position:relative;
 }
-#main .demo{
+#main .demo {
 	width:330px;
 	height:354px;
 	border:8px solid rgb(154,159,161);
@@ -33,46 +33,48 @@ header ul li:nth-child(3) a{
 	background:#fff;
 	position: relative;
 }
-#main .demo h5{
+
+//.demo_reg
+#main .demo  h5{
 	height:45px;
 	line-height:42px;
 }
-#main .demo h5 a{
+#main .demo  h5 a{
 	display: inline-block;
 	color:rgb(51,51,51);
 	font-size:12px;
 }
-#main .demo h5 a:hover{
+#main .demo  h5 a:hover{
 	color:red;
 	border-bottom:1px solid red;
 }
-#main .demo h5 .common{
+#main .demo  h5 #common{
 	margin-left:30px;
 	margin-right:26px;
 }
-#main .demo h5 .reg {
+#main .demo  h5 .reg {
 	margin-left:67px;
 }
-#main .demo .item{
+#main .demo .item_reg{
 	border-top:1px solid #ccc;
 	height:307px;
 	padding:26px 0 0 30px;
 }
-#main .demo .item #username,
-#main .demo .item #password
+#main .demo .item_reg #username,
+#main .demo .item_reg #password
 {
 	border:1px solid rgb(214,214,214);
 	height:34px;
 	width:268px;
 }
-#main .demo .item #password{
+#main .demo .item_reg #password{
 	margin-top:20px;
 	margin-bottom:19px;
 }
-#main .demo .item li:nth-child(3){
+#main .demo .item_reg li:nth-child(3){
 	font-size:13px;
 }
-#main .demo .item #btn{
+#main .demo .item_reg #btn{
 	width:270px;
 	height:40px;
 	text-align: center;
@@ -81,16 +83,16 @@ header ul li:nth-child(3) a{
 	marign-top:11px;
 	background:red;
 }
-#main .demo .item .list_p{
+#main .demo .item_reg .list_p{
 	width: 200px;
 }
-#main .demo .item .list_p h3{
+#main .demo .item_reg .list_p h3{
 	font-size:12px;
 	line-height:32px;
 	color:rgb(153,153,153);
 }
-#main .demo .item .list_p .weixin,
-#main .demo .item .list_p .qq
+#main .demo .item_reg .list_p .weixin,
+#main .demo .item_reg .list_p .qq
 {
 	display: inline-block;
 	width:67px;
@@ -103,8 +105,8 @@ header ul li:nth-child(3) a{
 	border-radius:3px;
 	margin-right:20px;
 }
-#main .demo .item .list_p .weixin i,
-#main .demo .item .list_p .qq i
+#main .demo .item_reg .list_p .weixin i,
+#main .demo .item_reg .list_p .qq i
 {
 	display: inline-block;
     width: 16px;
@@ -112,13 +114,13 @@ header ul li:nth-child(3) a{
     vertical-align: middle;
     margin-right: 5px;
 }
-#main .demo .item .list_p .weixin i{
+#main .demo .item_reg .list_p .weixin i{
 	background: url(../img/icon_v1.png) -128px -96px no-repeat;
 }
-#main .demo .item .list_p .qq i{
+#main .demo .item_reg .list_p .qq i{
 	background: url(../img/icon_v1.png) -49px 0 no-repeat;
 }
-#main .demo .item .code{
+#main .demo .item_reg .code{
 	position: absolute;
 	bottom:0;
 	right:0;
@@ -128,6 +130,135 @@ header ul li:nth-child(3) a{
 	font-size:0;
 }
 
+
+//phone_code
+#main .demo .item_phone{
+	border-top:1px solid #ccc;
+	height:307px;
+	padding:26px 0 0 30px;
+}
+#main .demo .item_phone #phonenumber,
+{
+	border:1px solid rgb(214,214,214);
+	height:34px;
+	width:268px;
+}
+#main .demo .item_phone #txt{
+	margin-top:20px;
+	margin-bottom:19px;
+	height:34px;
+	width:150px;
+	border:1px solid #ccc;
+}
+#main .demo .item_phone .phonema{
+	background: #ccc;
+	coor:#fff;
+	font-size:12px;
+	line-heihgt:34px;
+}
+#main .demo .item_phone li:nth-child(3){
+	font-size:13px;
+}
+#main .demo .item_phone #btn{
+	width:270px;
+	height:40px;
+	text-align: center;
+	line-height:40px;
+	color:#fff;
+	marign-top:11px;
+	background:red;
+}
+#main .demo .item_phone .list_p{
+	width: 200px;
+}
+#main .demo .item_phone .list_p h3{
+	font-size:12px;
+	line-height:32px;
+	color:rgb(153,153,153);
+}
+#main .demo .item_phone .list_p .weixin,
+#main .demo .item_phone .list_p .qq
+{
+	display: inline-block;
+	width:67px;
+	height:27px;
+	background: rgb(243,243,243);
+	font-size:12px;
+	color:#000;
+	line-height:27px;
+	padding-left:5px;
+	border-radius:3px;
+	margin-right:20px;
+}
+#main .demo .item_phone .list_p .weixin i,
+#main .demo .item_phone .list_p .qq i
+{
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#main .demo .item_phone .list_p .weixin i{
+	background: url(../img/icon_v1.png) -128px -96px no-repeat;
+}
+#main .demo .item_phone .list_p .qq i{
+	background: url(../img/icon_v1.png) -49px 0 no-repeat;
+}
+#main .demo .item_phone .code{
+	position: absolute;
+	bottom:0;
+	right:0;
+	width:60px;
+	height:60px;
+	background: url(../img/login-code.png) -60px 0px no-repeat;
+	font-size:0;
+}
+
+//erweima
+#main .demo .erweima{
+	padding-left:66px;
+}
+#main .demo .erweima ul li:nth-child(1){
+	margin-top:43px;
+	margin-bottom:13px;
+}
+#main .demo .erweima ul li:nth-child(1) p{
+	font-size:16px;
+	color:rgb(136,150,173);
+}
+#main .demo .erweima ul li:nth-child(2),
+#main .demo .erweima ul li:nth-child(3)
+{
+	padding-left:13px;
+}
+#main .demo .erweima ul li:nth-child(3){
+	margin-top:15px;
+	margin-bottom:12px;
+}
+#main .demo .erweima ul li:nth-child(3) button{
+	width:190px;
+	height:30px;
+	color:#fff;
+	background:rgb(200,15,30);
+	border-radius:5px;
+}
+#main .demo .erweima ul li:nth-child(4){
+	padding-left:53px;
+	font-size:12px;
+}
+#main .demo .erweima_code{
+	position: absolute;
+	bottom:0;
+	right:0;
+	width:60px;
+	height:60px;
+	background: url(../img/login-code.png) 0px -60px no-repeat;
+	font-size:0;
+}
+.active{
+	display: none;
+}
 //footer
 footer{
 	ul{

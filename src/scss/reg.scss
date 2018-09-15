@@ -21,11 +21,14 @@ header ul li:nth-child(3) a{
 #main{
 	width:944px;
 	margin:0 auto;
-	height:450px;
+	height:509px;
 	border:8px solid rgb(240,240,240);
 	background:url(../img/reg_bg.png) right center no-repeat; 
 }
-
+.status{
+	background:#ccc;
+	color:#000;
+}
 #main .zhuce-tab{
 	ul{
 		li{
@@ -38,38 +41,60 @@ header ul li:nth-child(3) a{
 		}
 	}
 }
-#main .regtip{
-	dl{
+#main .zhuce-tab .rg_a{
+	float:right;
+	a{
+		width:35px;
+		height:16px;
+		background: #58bc58;
+		color:#fff;
+	}
+}
+dl{
 		margin-top:19px;
 		height:30px;
 		dt{
 			height:30px;
 			float: left;
 			width:100px;
-			line-heihgt:30px;
+			line-height:30px;
 			text-align: right;
 				i{
 					color:red;
 				}
 			}
 		dd{
-			float:left;
+			display: block;
+			height:30px;
 			input{
 				width:240px;
-				height:28px;
+				height:30px;
 				border:1px solid #ccc;
+				display: inline-block;
+			}
+			em{
+				font-size:8px;
 			}
 		}
 	}
-}
-#main .regtip #register{
+#main .regtip #register_phone,
+#main .accoune #register_common
+{
 	width:160px;
 	height:40px;
 	color:#fff;
 	background:rgb(200,15,30);
 	text-align: center;
-	line-heihgt:40px;
+	line-height:40px;
 	border-radius:5px;
+}
+.active{
+	display:none;
+}#main .yanzhengCode{
+	height:30px;
+	line-height:30px;
+	background: #333;
+	color:#fff;
 }
 //footer
 footer{

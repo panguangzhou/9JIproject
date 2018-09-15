@@ -3,8 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>注册</title>
+	<script src="../lib/jquery-1.10.1.min.js"></script>
+	<script src="../js/common.js"></script>
+	<link rel="stylesheet" href="../lib/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/reg.css">
+	<script src="../js/reg.js"></script>
 	<style>
 		.container{
 			width:980px;
@@ -26,11 +30,13 @@
 	<div id="main">
 		<div class="zhuce-tab clearfix">
 			<ul>
-				<li>快速注册</li>
-				<li>账号注册</li>
+				<li  class="quick"><a href="#">快速注册</a></li>
+				<li class="registration status"><a href="#">账号注册</a></li>
 			</ul>
+			<span class="rg_a">已有九机网账号?现在去<a href="login.html">登录</a></span>
 		</div>
 		<div class="regtip">
+			<div class="regtip_phone">
 			<dl>
 				<dt><i>*</i>手机号码</dt>
 				<dd>
@@ -41,7 +47,7 @@
 			<dl>
 				<dt><i>*</i>验证码</dt>
 				<dd>
-					<input type="text" id="authcode">
+					<input type="text" id="authcodex">
 					<span class="vcode"></span>
 					<em>看不清楚？换一张</em>
 				</dd>
@@ -59,11 +65,77 @@
 			</dl>
 			<dl>
 				<dt></dt>
-				<p><button id="register">提交注册</button></p>
+				<p><button id="register_phone">提交注册</button></p>
 			</dl>
-			
+			</div>
 		</div>
-		<div class="account"></div>
+		<div class="accoune active">
+			<div class="accoune_common">
+			<dl>
+				<dt><i>*</i>用户名</dt>
+				<dd>
+					<input type="text" id="username">
+					<em>4-16位，数字或汉字，请不要输入特殊字符!</em>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<i>*</i>
+					密码
+				</dt>
+				<dd>
+					<input type="text" id="password">
+					<em>6个字符以上的字符或数字</em>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<i>*</i>
+					重复密码
+				</dt>
+				<dd>
+					<input type="password" id="confirm">
+					<em>请重复输入密码确认不会输错</em>
+				</dd>
+			</dl>
+			<dl>
+				<dt><i>*</i>手机号码</dt>
+				<dd>
+					<input type="text" id="number">
+					<em>手机号码非常重要，找回密码及购物都会用到</em>
+				</dd>
+			</dl>
+			<dl>
+				<dt>邮箱地址</dt>
+				<dd><input type="email" id="email">
+					<em>请填写邮箱，用于找回密码</em>
+				</dd>
+			</dl>
+			<dl>
+				<dt>验证码</dt>
+				<dd>
+					<input type="text" id="code">
+					<span class="yanzhengCode"></span>
+					<em>看不清楚？换一张</em>
+				</dd>
+			</dl>
+			<dl>
+				<dt><i>*</i>短信验证</dt>
+				<dd>
+					<input type="text" id="sms">
+					<button>获取短信验证码</button>
+				</dd>
+			</dl>
+			<dl>
+				<dt></dt>
+				<p><input type="checkbox" id="check">我已认真阅读并同意<a href="#">《九机网用户协议》</a></p>
+			</dl>
+			<dl>
+				<dt></dt>
+				<p><button id="register_common">提交注册</button></p>
+			</dl>
+		</div>
+	</div>
 	</div>
 		<!-- footer -->
 	<footer>

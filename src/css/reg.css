@@ -18,9 +18,13 @@ header ul li:nth-child(3) a {
 #main {
   width: 944px;
   margin: 0 auto;
-  height: 450px;
+  height: 509px;
   border: 8px solid #f0f0f0;
   background: url(../img/reg_bg.png) right center no-repeat; }
+
+.status {
+  background: #ccc;
+  color: #000; }
 
 #main .zhuce-tab ul li {
   float: left;
@@ -30,32 +34,54 @@ header ul li:nth-child(3) a {
   text-align: center;
   line-height: 40px; }
 
-#main .regtip dl {
+#main .zhuce-tab .rg_a {
+  float: right; }
+  #main .zhuce-tab .rg_a a {
+    width: 35px;
+    height: 16px;
+    background: #58bc58;
+    color: #fff; }
+
+dl {
   margin-top: 19px;
   height: 30px; }
-  #main .regtip dl dt {
+  dl dt {
     height: 30px;
     float: left;
     width: 100px;
-    line-heihgt: 30px;
+    line-height: 30px;
     text-align: right; }
-    #main .regtip dl dt i {
+    dl dt i {
       color: red; }
-  #main .regtip dl dd {
-    float: left; }
-    #main .regtip dl dd input {
+  dl dd {
+    display: block;
+    height: 30px; }
+    dl dd input {
       width: 240px;
-      height: 28px;
-      border: 1px solid #ccc; }
+      height: 30px;
+      border: 1px solid #ccc;
+      display: inline-block; }
+    dl dd em {
+      font-size: 8px; }
 
-#main .regtip #register {
+#main .regtip #register_phone,
+#main .accoune #register_common {
   width: 160px;
   height: 40px;
   color: #fff;
   background: #c80f1e;
   text-align: center;
-  line-heihgt: 40px;
+  line-height: 40px;
   border-radius: 5px; }
+
+.active {
+  display: none; }
+
+#main .yanzhengCode {
+  height: 30px;
+  line-height: 30px;
+  background: #333;
+  color: #fff; }
 
 footer ul {
   margin-top: 40px; }

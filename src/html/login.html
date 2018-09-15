@@ -6,6 +6,7 @@
 	<script src="../lib/jquery-1.10.1.min.js"></script>
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/login.css">
+	<script src="../js/login.js"></script>
 	<style>
 		.container{
 			width: 960px;
@@ -28,12 +29,12 @@
 	<!-- main -->
 	<div id="main">
 		<div class="demo clearfix">
-			<h5>
-				<a href="#" class="common">普通登录</a>
-				<a href="#" class="phone">手机登录</a>
+				<h5>
+				<a href="#" id="common">普通登录</a>
+				<a href="#" id="phone">手机登录</a>
 				<a href="reg.html" class="reg">账号注册<s></s></a>
 			</h5>
-			<div class="item">
+			<div class="item_reg">
 				<ul>
 					<li>
 						<input type="text" id="username" placeholder="用户名/邮箱/手机号">
@@ -53,6 +54,40 @@
 					</li>
 				</ul>
 				<div class="code">
+				</div>
+			</div>
+		<!-- 手机登录界面 -->
+			<div class="item_phone active">
+				<ul>
+					<li>
+						<input type="text" id="phonenumber" placeholder="您的手机号码">
+					</li>
+					<li><input type="text" id="txt" placeholder="短信验证码">
+						<a href="#" class="phonema">获取动态验证码</a>
+					</li>
+					<li>
+						<input type="checkbox">下次自动登录
+					</li>
+					<li>
+						<button id="btn">登录</button>
+					</li>
+					<li class="list_p">
+						<h3>使用合作的网站的账号登录：</h3>
+						<p><a href="#" class="weixin"><i></i>微信</a><a href="#" class="qq"><i></i>qq号</a></p>
+					</li>
+				</ul>
+				<div class="code">
+				</div>
+			</div>
+		<!-- 二维码界面 -->
+			<div class="erweima active">
+				<ul>
+					<li><p>使用九机APP 扫码安全登录</p></li>
+					<li><img src="../img/appdown.png" alt=""></li>
+					<li><button>刷新二维码</button></li>
+					<li><span>查看使用帮助</span></li>
+				</ul>
+				<div class="erweima_code">
 				</div>
 			</div>
 		</div>
