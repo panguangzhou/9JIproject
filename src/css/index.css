@@ -1,0 +1,298 @@
+.top-nav {
+  height: 70px;
+  position: relative;
+  overflow: hidden; }
+  .top-nav a {
+    height: 70px; }
+  .top-nav i {
+    display: block;
+    background: url(../img/icon_v1.png) -144px 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    right: 5px; }
+  .top-nav img {
+    width: 100%;
+    height: 100%; }
+
+.nav {
+  height: 31px;
+  background: #e3e4e5;
+  font-size: 12px;
+  color: #6b6b6b;
+  line-height: 31px; }
+  .nav .nav_left {
+    float: left; }
+    .nav .nav_left a {
+      height: 31px;
+      color: #333333; }
+      .nav .nav_left a i {
+        width: 12px;
+        height: 16px;
+        display: inline-block;
+        background: url("../img/weizhi.png") no-repeat; }
+    .nav .nav_left p {
+      margin-left: 15px;
+      display: inline-block; }
+      .nav .nav_left p a {
+        display: inline-block;
+        margin-left: 8px; }
+  .nav .nav_menu {
+    padding-left: 206px;
+    float: left; }
+    .nav .nav_menu ul li {
+      float: left;
+      padding: 0px 12px; }
+      .nav .nav_menu ul li a {
+        color: #6b6b6b; }
+      .nav .nav_menu ul li i {
+        display: inline-block; }
+    .nav .nav_menu ul .user i {
+      width: 9px;
+      height: 7px;
+      background: url(../img/icon_v1.png) -19px -6px no-repeat; }
+    .nav .nav_menu ul .vip i {
+      width: 1px;
+      height: 1px; }
+    .nav .nav_menu ul .app i {
+      width: 10px;
+      height: 15px;
+      line-height: 31px;
+      vertical-align: text-top;
+      margin-right: 3px;
+      background: url(../img/icon_v1.png) -35px 0 no-repeat; }
+    .nav .nav_menu ul .sitemap i {
+      width: 9px;
+      height: 7px;
+      background: url(../img/icon_v1.png) -19px -6px no-repeat; }
+    .nav .nav_menu ul .info i {
+      width: 15px;
+      height: 15px;
+      background: url(../img/nav_info.png) no-repeat;
+      vertical-align: text-top;
+      margin-right: 3px; }
+    .nav .nav_menu ul .phone a {
+      line-height: 31px;
+      font-size: 10px;
+      color: red; }
+    .nav .nav_menu ul .phone i {
+      width: 18px;
+      height: 18px;
+      background: url(../img/nav_phone.png) no-repeat;
+      vertical-align: text-top;
+      margin-right: 3px; }
+
+header {
+  height: 145px; }
+  header .logo {
+    line-height: 145px;
+    text-align: center; }
+  header .search {
+    padding-left: 115px;
+    padding-top: 25px;
+    background: #f7f7f7; }
+    header .search .input-group {
+      border: 1px solid #red; }
+      header .search .input-group #input-search {
+        width: 460px; }
+      header .search .input-group .input-group-addon {
+        background: #c80f1e;
+        color: #fff; }
+    header .search p {
+      margin-top: 5px; }
+      header .search p a {
+        color: #6b6b6b; }
+    header .search .search-nav {
+      font-size: 16px;
+      padding-top: 16px; }
+      header .search .search-nav ul li {
+        float: left;
+        line-height: 45px;
+        margin: 0 8px; }
+        header .search .search-nav ul li a {
+          color: #333333; }
+  header .buyCart {
+    padding-top: 25px; }
+    header .buyCart a {
+      display: inline-block;
+      width: 158px;
+      height: 36px;
+      border: 1px solid #ccc;
+      line-height: 36px;
+      text-align: center; }
+      header .buyCart a i {
+        display: inline-block;
+        width: 23px;
+        height: 21px;
+        background: url(../img/icon_v1.png) -153px -141px no-repeat; }
+      header .buyCart a span {
+        display: inline-block;
+        width: 15px;
+        height: 15px; }
+
+#main {
+  height: 480px; }
+  #main .main-left {
+    width: 219px;
+    float: left;
+    padding: 0;
+    background: #818181;
+    position: relative;
+    box-sizing: boder-box; }
+    #main .main-left ul {
+      width: 219px; }
+      #main .main-left ul li {
+        height: 80px;
+        width: 219px; }
+        #main .main-left ul li a {
+          color: #fff; }
+        #main .main-left ul li p {
+          padding-top: 8px;
+          color: #fff; }
+          #main .main-left ul li p i {
+            display: inline-block;
+            width: 11px;
+            height: 16px;
+            background: url(../img/icon_v1.png) -82px 0 no-repeat;
+            margin-right: 10px;
+            margin-left: 13px; }
+          #main .main-left ul li p s {
+            display: inline-block;
+            float: right;
+            margin-right: 8px; }
+        #main .main-left ul li span {
+          padding-top: 8px;
+          display: inline-block;
+          padding-left: 21px;
+          font-size: 10px;
+          margin-left: 16px; }
+          #main .main-left ul li span a {
+            color: #d9d9d9; }
+    #main .main-left .main-item {
+      position: absolute;
+      top: 0;
+      left: 219px;
+      width: 760px;
+      height: 480px;
+      z-index: 99;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      background: #fff;
+      padding-top: 10px; }
+      #main .main-left .main-item .main-item-left {
+        float: left;
+        width: 510px;
+        box-sizing: border-box; }
+        #main .main-left .main-item .main-item-left .item-1 {
+          height: 70px; }
+          #main .main-left .main-item .main-item-left .item-1 span {
+            display: block;
+            float: left;
+            width: 79px;
+            height: 70px;
+            padding-top: 17px;
+            padding-left: 9px;
+            color: #c80f1e;
+            font-size: 12px;
+            box-sizing: border-box; }
+          #main .main-left .main-item .main-item-left .item-1 p {
+            display: block;
+            float: left;
+            width: 431px;
+            color: #000;
+            padding-top: 3px; }
+            #main .main-left .main-item .main-item-left .item-1 p a {
+              display: inline-block;
+              font-size: 12px;
+              line-height: 34px;
+              color: #333333; }
+            #main .main-left .main-item .main-item-left .item-1 p s {
+              display: inline-block;
+              width: 2px;
+              height: 12px;
+              background: #d8e4ff;
+              margin: 0 10px; }
+      #main .main-left .main-item .main-item-right {
+        width: 201px;
+        float: left;
+        padding-left: 29px;
+        padding-right: 10px; }
+        #main .main-left .main-item .main-item-right ul .top h3 {
+          margin-top: 25px;
+          margin-bottom: 9px;
+          font-size: 16px; }
+        #main .main-left .main-item .main-item-right ul .top p {
+          margin-bottom: 21px; }
+        #main .main-left .main-item .main-item-right ul .top a {
+          display: inline-block;
+          width: 178px;
+          height: 150px; }
+
+#main .main-left li:hover {
+  background: #333; }
+
+#main .banner {
+  float: left;
+  width: 760px;
+  height: 480px;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box; }
+  #main .banner .box {
+    width: 760px;
+    overflow: hidden;
+    box-sizing: border-box; }
+    #main .banner .box img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: 1s; }
+    #main .banner .box .on {
+      opacity: 1; }
+  #main .banner .nav {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px; }
+    #main .banner .nav a {
+      display: block;
+      color: #fff;
+      font-size: 50px; }
+    #main .banner .nav .lt {
+      position: absolute;
+      top: 175px;
+      z-index: 3;
+      display: none; }
+    #main .banner .nav .gt {
+      position: absolute;
+      top: 175px;
+      right: 0;
+      z-index: 3;
+      display: none; }
+  #main .banner .list {
+    position: absolute;
+    bottom: 15px;
+    margin-left: 300px; }
+    #main .banner .list ul li {
+      float: left;
+      width: 20px;
+      height: 20px;
+      background: #ccc;
+      border-radius: 50%;
+      margin: 0 7px; }
+    #main .banner .list .on {
+      background: #fff; }
+
+#main .banner:hover .lt,
+#main .banner:hover .gt {
+  display: block; }
+
+#main .info-card {
+  width: 200px;
+  float: left;
+  background: white; }
+
+/*# sourceMappingURL=index.css.map */

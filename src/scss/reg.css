@@ -1,3 +1,158 @@
+header {
+  height: 80px;
+  line-height: 80px; }
 
+header ul li {
+  float: left; }
+
+header ul li:nth-child(1) {
+  margin-right: 40px; }
+
+header ul li:nth-child(3) {
+  font-size: 24px;
+  margin-left: 40px; }
+
+header ul li:nth-child(3) a {
+  color: #c80f1e; }
+
+#main {
+  width: 944px;
+  margin: 0 auto;
+  height: 509px;
+  border: 8px solid #f0f0f0;
+  background: url(../img/reg_bg.png) right center no-repeat; }
+
+.status {
+  background: #ccc;
+  color: #000; }
+
+#main .zhuce-tab ul li {
+  float: left;
+  width: 104px;
+  height: 40px;
+  border-right: 1px solid #dddddd;
+  text-align: center;
+  line-height: 40px; }
+
+#main .zhuce-tab .rg_a {
+  float: right; }
+  #main .zhuce-tab .rg_a a {
+    width: 35px;
+    height: 16px;
+    background: #58bc58;
+    color: #fff; }
+
+dl {
+  margin-top: 19px;
+  height: 30px; }
+  dl dt {
+    height: 30px;
+    float: left;
+    width: 100px;
+    line-height: 30px;
+    text-align: right; }
+    dl dt i {
+      color: red; }
+  dl dd {
+    display: block;
+    height: 30px; }
+    dl dd input {
+      width: 240px;
+      height: 30px;
+      border: 1px solid #ccc;
+      display: inline-block; }
+    dl dd em {
+      font-size: 8px; }
+
+#main .regtip #register_phone,
+#main .accoune #register_common {
+  width: 160px;
+  height: 40px;
+  color: #fff;
+  background: #c80f1e;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px; }
+
+.active {
+  display: none; }
+
+#main .yanzhengCode {
+  height: 30px;
+  line-height: 30px;
+  background: #333;
+  color: #fff; }
+
+footer ul {
+  margin-top: 40px; }
+  footer ul li {
+    font-size: 12px; }
+    footer ul li a {
+      color: #000; }
+
+footer .list_1 {
+  margin-left: 127px;
+  margin-bottom: 24px; }
+
+footer .list_1 a {
+  margin: 0 10px; }
+
+footer .list_1 s {
+  display: inline-block;
+  height: 12px;
+  width: 2px;
+  background: #ead9cf; }
+
+footer .list_2,
+footer .list_3,
+footer .list_4,
+footer .list_5 {
+  margin-bottom: 15px;
+  color: #999999; }
+
+footer .list_2 {
+  margin-left: 117px; }
+
+footer .list_3 {
+  margin-left: 152px; }
+
+footer .list_4 {
+  margin-left: 332px; }
+
+footer .list_5 {
+  margin-left: 384px; }
+
+footer .list_6 {
+  overflow: hidden; }
+
+footer .list_6 .s1,
+footer .list_6 .s2,
+footer .list_6 .s3,
+footer .list_6 .s4,
+footer .list_6 .s5,
+footer .list_6 .s6 {
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin-left: 10px; }
+
+footer .list_6 .s1 {
+  background: url(../img/botpic1c.jpg); }
+
+footer .list_6 .s2 {
+  background: url(../img/bottom_large_img.png) no-repeat; }
+
+footer .list_6 .s3 {
+  background: url(../img/bot_link.jpg) 0 -50px no-repeat; }
+
+footer .list_6 .s4 {
+  background: url(../img/bot_link.jpg) 0 -100px no-repeat; }
+
+footer .list_6 .s5 {
+  background: url(../img/bot_link.jpg) no-repeat; }
+
+footer .list_6 .s6 {
+  background: url(../img/bot_link.jpg) 0 -50px no-repeat; }
 
 /*# sourceMappingURL=reg.css.map */
