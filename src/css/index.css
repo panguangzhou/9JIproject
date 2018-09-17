@@ -1,3 +1,6 @@
+body {
+  background: #f7f7f7; }
+
 .top-nav {
   height: 70px;
   position: relative;
@@ -145,6 +148,8 @@ header {
       #main .main-left ul li {
         height: 80px;
         width: 219px; }
+        #main .main-left ul li:hover {
+          background: #333; }
         #main .main-left ul li a {
           color: #fff; }
         #main .main-left ul li p {
@@ -179,8 +184,7 @@ header {
       border-top: 1px solid #ccc;
       border-right: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
-      background: #fff;
-      padding-top: 10px; }
+      background: #fff; }
       #main .main-left .main-item .main-item-left {
         float: left;
         width: 510px;
@@ -214,24 +218,16 @@ header {
               height: 12px;
               background: #d8e4ff;
               margin: 0 10px; }
-      #main .main-left .main-item .main-item-right {
-        width: 201px;
-        float: left;
-        padding-left: 29px;
-        padding-right: 10px; }
-        #main .main-left .main-item .main-item-right ul .top h3 {
-          margin-top: 25px;
-          margin-bottom: 9px;
-          font-size: 16px; }
-        #main .main-left .main-item .main-item-right ul .top p {
-          margin-bottom: 21px; }
-        #main .main-left .main-item .main-item-right ul .top a {
-          display: inline-block;
-          width: 178px;
-          height: 150px; }
 
-#main .main-left li:hover {
-  background: #333; }
+.main-item-xx {
+  overflow: hidden;
+  box-sizing: border-box; }
+
+.main-item-xx > hr {
+  margin: 0; }
+
+#main .main-item {
+  display: none; }
 
 #main .banner {
   float: left;
@@ -294,5 +290,214 @@ header {
   width: 200px;
   float: left;
   background: white; }
+  #main .info-card hr {
+    margin: 0; }
+  #main .info-card h3 {
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 34px; }
+    #main .info-card h3 a {
+      color: #000; }
+    #main .info-card h3 .change-icon {
+      display: inline-block;
+      float: right; }
+  #main .info-card h2 {
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 34px; }
+  #main .info-card .user-logo {
+    height: 92px;
+    box-sizing: border-box;
+    padding: 10px; }
+    #main .info-card .user-logo dl {
+      hegiht: 43px;
+      display: inline-block; }
+      #main .info-card .user-logo dl dt {
+        float: left;
+        width: 63px; }
+      #main .info-card .user-logo dl dd {
+        float: left;
+        margin-left: 20px; }
+        #main .info-card .user-logo dl dd p {
+          color: red;
+          line-height: 24px; }
+    #main .info-card .user-logo .logo-text {
+      padding-left: 5px;
+      margin-top: 8px;
+      font-size: 12px; }
+      #main .info-card .user-logo .logo-text a {
+        color: red; }
+  #main .info-card .notice {
+    padding: 0 10px; }
+    #main .info-card .notice ul {
+      margin: 10px 0; }
+      #main .info-card .notice ul li {
+        margin: 10px 0;
+        font-size: 12px; }
+        #main .info-card .notice ul li a {
+          color: #999999; }
+  #main .info-card .service a {
+    display: block;
+    float: left;
+    width: 65px;
+    height: 75px;
+    border: 1px solid #ccc;
+    color: #000; }
+    #main .info-card .service a i {
+      display: inline-block;
+      margin: 5px 10px;
+      width: 40px;
+      height: 40px;
+      background: url(../img/service-icon.png) no-repeat;
+      transition: 1s; }
+      #main .info-card .service a i:hover {
+        transform: rotate(15deg); }
+    #main .info-card .service a s {
+      display: block;
+      font-size: 10px; }
+    #main .info-card .service a:hover {
+      color: red; }
+
+.product_type {
+  margin-top: 20px;
+  overflow: hidden; }
+  .product_type .troika-list {
+    width: 383px;
+    height: 458px; }
+    .product_type .troika-list .troika-body {
+      padding: 14px 10px 0 0;
+      background: #fff;
+      overflow: hidden; }
+      .product_type .troika-list .troika-body .left {
+        width: 186px;
+        height: 458px;
+        float: left; }
+        .product_type .troika-list .troika-body .left .big-img {
+          width: 186px;
+          height: 254px;
+          position: relative;
+          border-right: 1px dashed #ccc;
+          border-bottom: 1px dashed #ccc; }
+          .product_type .troika-list .troika-body .left .big-img .diy-tip {
+            display: block;
+            width: 170px;
+            height: 64px;
+            line-heihgt: 18px;
+            padding: 12px 10px; }
+            .product_type .troika-list .troika-body .left .big-img .diy-tip h3 {
+              font-size: 16px;
+              color: #e29392;
+              line-height: 36px; }
+            .product_type .troika-list .troika-body .left .big-img .diy-tip p {
+              font-size: 12px;
+              color: #000; }
+            .product_type .troika-list .troika-body .left .big-img .diy-tip img {
+              width: 160px;
+              height: 160px;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              transition: 1s; }
+              .product_type .troika-list .troika-body .left .big-img .diy-tip img:hover {
+                right: 20px; }
+        .product_type .troika-list .troika-body .left .bottom-img {
+          width: 186px;
+          height: 126px;
+          position: relative;
+          border-right: 1px dashed #ccc;
+          border-bottom: 1px dashed #ccc; }
+          .product_type .troika-list .troika-body .left .bottom-img .diy-tip {
+            display: block;
+            width: 190px;
+            height: 64px;
+            padding: 12px 10px; }
+            .product_type .troika-list .troika-body .left .bottom-img .diy-tip h3 {
+              font-size: 16px;
+              color: #e29392;
+              line-height: 36px; }
+            .product_type .troika-list .troika-body .left .bottom-img .diy-tip p {
+              font-size: 8px;
+              color: #000; }
+            .product_type .troika-list .troika-body .left .bottom-img .diy-tip img {
+              width: 60px;
+              height: 60px;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              transition: 1s; }
+              .product_type .troika-list .troika-body .left .bottom-img .diy-tip img:hover {
+                right: 20px; }
+      .product_type .troika-list .troika-body .right {
+        width: 186px;
+        float: left; }
+        .product_type .troika-list .troika-body .right .anim-left {
+          height: 127px;
+          position: relative;
+          border-bottom: 1px dashed #ccc; }
+          .product_type .troika-list .troika-body .right .anim-left .diy-tip {
+            display: block;
+            width: 190px;
+            height: 64px;
+            padding: 12px 10px; }
+            .product_type .troika-list .troika-body .right .anim-left .diy-tip h3 {
+              font-size: 16px;
+              color: #e29392;
+              line-height: 36px; }
+            .product_type .troika-list .troika-body .right .anim-left .diy-tip p {
+              font-size: 8px;
+              color: #000; }
+            .product_type .troika-list .troika-body .right .anim-left .diy-tip img {
+              width: 60px;
+              height: 60px;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              transition: 1s; }
+              .product_type .troika-list .troika-body .right .anim-left .diy-tip img:hover {
+                right: 20px; }
+
+.content-item {
+  margin-top: 20px; }
+  .content-item .overflow-hide {
+    width: 595px;
+    height: 160px; }
+    .content-item .overflow-hide .left {
+      margin-right: 10px;
+      position: relative; }
+      .content-item .overflow-hide .left .sh-tip {
+        width: 375px;
+        height: 160px;
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        transition: 1s; }
+        .content-item .overflow-hide .left .sh-tip:hover {
+          left: 40%; }
+    .content-item .overflow-hide .right {
+      margin-right: 10px;
+      position: relative; }
+      .content-item .overflow-hide .right .sh-tip {
+        width: 375px;
+        height: 160px;
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        transition: 1s; }
+        .content-item .overflow-hide .right .sh-tip:hover {
+          left: 40%; }
+
+.wrapper {
+  height: 24px;
+  margin: 22px 0; }
+
+.discounts {
+  width: 575px;
+  overflow: hidden; }
+  .discounts .diy-trial .trail-title .sale-list {
+    margin: 20px 0;
+    height: 246px;
+    position: relative; }
+    .discounts .diy-trial .trail-title .sale-list ul li {
+      float: left; }
 
 /*# sourceMappingURL=index.css.map */

@@ -50,4 +50,5 @@ $(function(){
 		oList[index].className='on';
 		lastIndex=index;
 	}
+	
 })
