@@ -18,13 +18,9 @@
 
 	if($user&&$paw){
 
-		$sql = "select * from admin where user='$user'";
-
+		$sql = "select * from admin where user='111'";
+		
 		$result = $conn->query($sql);
- 		while ($row = mysqli_fetch_assoc($result))
-  		{
-    		echo "question_title : {$row['xxx']} <br>";
-  		}
 
 		if($result->num_rows>0){
 			echo 'fail';

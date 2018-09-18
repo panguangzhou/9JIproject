@@ -25,9 +25,10 @@ $(function(){
 	xhr.onload=function(){
 		if(statusCode.indexOf(xhr.status)>=0){
 			let data = xhr.responseText;
+			console.log(data)
 			if(data === 'sueecss'){
 				location.href='../indxe.html';
-			}else{
+			}else if(data==='fail'){
 				alert('没有该用户');
 			}
 		}
@@ -35,10 +36,14 @@ $(function(){
 	//用户注册页面
 	$('#btn').on('click',function(e){
 		if(e.target.parentNode.parentNode.parentNode.className==='item_reg'){
-			let _username = $('#username').val();
-			let _passowrd = $('#password').val();
-			xhr.open('get',`../api/login.php?username=${_username}&password=${_passowrd}`);
-			xhr.send();
+			if($('#username').val()!==''){
+				if($('#password').val()!==''){
+					let _username = $('#username').val();
+					let _passowrd = $('#password').val();
+					xhr.open('get',`../api/login.php?username=${_username}&password=${_passowrd}`,true);
+					xhr.send();
+				}
+			}
 		}
 	})
 })

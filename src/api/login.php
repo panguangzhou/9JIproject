@@ -1,9 +1,9 @@
 <?php
 
-	$servername ='localhost';
-	$username = 'root';
-	$password ='';
-	$dbname='jiuji';
+	$servername ="localhost";
+	$username = "root";
+	$password ="";
+	$dbname="jiuji";
 
 	$conn = new mysqli($servername,$username,$password,$dbname);
 
@@ -17,15 +17,13 @@
 
 	$password=md5($password);
 
-	$sql = "select * from jiuji where admin user='$username' and paw='$password'";
+	$sql = "select * from admin where user='$username' and paw='$password'";
 
 	$ruselt =$conn->query($sql);
-
+	
 	if($ruselt->num_rows>0){
 		echo "sueecss";
 	}else{
 		echo "fail";
-	};
-
-
+	}
 ?>

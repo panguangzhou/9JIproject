@@ -1,0 +1,37 @@
+[{
+	"name":"小米8全网通版",
+	"title":"官网直降200",
+	"price":2799.00,
+	"img":"../img/xiaomi8.jpg"
+},{
+	"name":"华为P20全网通版",
+	"title":"专享300元换新补贴",
+	"price":3388.00,
+	"img":"../img/main-p20.png"
+},{
+	"name":"荣耀10全网尊享版",
+	"title":"会变色,更潮美",
+	"price":2533.00,
+	"img":"../img/main-ry10.png"
+},{
+	"name":"华为nava3全网尊享版",
+	"title":"高颜值爱自拍",
+	"price":1999.00,
+	"img":"../img/huaweinava3.jpg"
+},{
+	"name":"华为畅享8全网尊享版",
+	"title":"前后四摄玩不设限",
+	"price":1499.00,
+	"img":"../img/huaweicx8.jpg"
+},{
+	"name":"华为麦芒7全网尊享版",
+	"title":"生而无畏加速前行",
+	"price":2399.00,
+	"img":"../img/huaweimaiman7.jpg"
+},{
+	"name":"坚果P20全网尊享版",
+	"title":"双系统无限屏	",
+	"price":2298.00,
+	"img":"../img/jiaguop20.jpg"
+}
+]

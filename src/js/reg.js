@@ -109,14 +109,6 @@ $(function(){
 	$('#register_common').on('click',function(){
 		let paw = $('#password').val();
 		if($('#check').prop('checked')){
-			// let data =[
-			// 		{
-			// 			"username":"_username",
-			// 			"password":"txt",
-			// 			"phonenumber":"num",
-			// 			"email":"_num"
-			// 		}
-			// 	]
 		let _username = $('#username').val();
 		let txt = $('#password').val();
 		let num = $('#number').val();

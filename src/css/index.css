@@ -3,10 +3,12 @@ body {
 
 .top-nav {
   height: 70px;
-  position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .top-nav a {
-    height: 70px; }
+    display: inline-block;
+    height: 70px;
+    position: relative; }
   .top-nav i {
     display: block;
     background: url(../img/icon_v1.png) -144px 0 no-repeat;
@@ -14,7 +16,12 @@ body {
     height: 16px;
     position: absolute;
     top: 5px;
-    right: 5px; }
+    right: 5px;
+    transition: 1s; }
+    .top-nav i:hover {
+      background: url(../img/icon_v1.png) -160px 0 no-repeat; }
+    .top-nav i:hover {
+      transform: rotate(360deg); }
   .top-nav img {
     width: 100%;
     height: 100%; }
@@ -378,55 +385,30 @@ header {
           position: relative;
           border-right: 1px dashed #ccc;
           border-bottom: 1px dashed #ccc; }
-          .product_type .troika-list .troika-body .left .big-img .diy-tip {
-            display: block;
-            width: 170px;
-            height: 64px;
-            line-heihgt: 18px;
-            padding: 12px 10px; }
-            .product_type .troika-list .troika-body .left .big-img .diy-tip h3 {
-              font-size: 16px;
-              color: #e29392;
-              line-height: 36px; }
-            .product_type .troika-list .troika-body .left .big-img .diy-tip p {
-              font-size: 12px;
-              color: #000; }
-            .product_type .troika-list .troika-body .left .big-img .diy-tip img {
-              width: 160px;
-              height: 160px;
-              position: absolute;
-              right: 0;
-              bottom: 0;
-              transition: 1s; }
-              .product_type .troika-list .troika-body .left .big-img .diy-tip img:hover {
-                right: 20px; }
+          .product_type .troika-list .troika-body .left .big-img .diy-tip img {
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transition: 1s; }
+            .product_type .troika-list .troika-body .left .big-img .diy-tip img:hover {
+              right: 20px; }
         .product_type .troika-list .troika-body .left .bottom-img {
           width: 186px;
           height: 126px;
           position: relative;
           border-right: 1px dashed #ccc;
           border-bottom: 1px dashed #ccc; }
-          .product_type .troika-list .troika-body .left .bottom-img .diy-tip {
-            display: block;
-            width: 190px;
-            height: 64px;
-            padding: 12px 10px; }
-            .product_type .troika-list .troika-body .left .bottom-img .diy-tip h3 {
-              font-size: 16px;
-              color: #e29392;
-              line-height: 36px; }
-            .product_type .troika-list .troika-body .left .bottom-img .diy-tip p {
-              font-size: 8px;
-              color: #000; }
-            .product_type .troika-list .troika-body .left .bottom-img .diy-tip img {
-              width: 60px;
-              height: 60px;
-              position: absolute;
-              right: 0;
-              bottom: 0;
-              transition: 1s; }
-              .product_type .troika-list .troika-body .left .bottom-img .diy-tip img:hover {
-                right: 20px; }
+          .product_type .troika-list .troika-body .left .bottom-img .diy-tip img {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transition: 1s; }
+            .product_type .troika-list .troika-body .left .bottom-img .diy-tip img:hover {
+              right: 20px; }
       .product_type .troika-list .troika-body .right {
         width: 186px;
         float: left; }
@@ -434,70 +416,394 @@ header {
           height: 127px;
           position: relative;
           border-bottom: 1px dashed #ccc; }
-          .product_type .troika-list .troika-body .right .anim-left .diy-tip {
-            display: block;
-            width: 190px;
-            height: 64px;
-            padding: 12px 10px; }
-            .product_type .troika-list .troika-body .right .anim-left .diy-tip h3 {
-              font-size: 16px;
-              color: #e29392;
-              line-height: 36px; }
-            .product_type .troika-list .troika-body .right .anim-left .diy-tip p {
-              font-size: 8px;
-              color: #000; }
-            .product_type .troika-list .troika-body .right .anim-left .diy-tip img {
-              width: 60px;
-              height: 60px;
-              position: absolute;
-              right: 0;
-              bottom: 0;
-              transition: 1s; }
-              .product_type .troika-list .troika-body .right .anim-left .diy-tip img:hover {
-                right: 20px; }
+          .product_type .troika-list .troika-body .right .anim-left .diy-tip img {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transition: 1s; }
+            .product_type .troika-list .troika-body .right .anim-left .diy-tip img:hover {
+              right: 20px; }
 
 .content-item {
   margin-top: 20px; }
-  .content-item .overflow-hide {
-    width: 595px;
+  .content-item .overflow-hide-left {
+    float: left;
+    width: 570px;
     height: 160px; }
-    .content-item .overflow-hide .left {
+    .content-item .overflow-hide-left .left {
       margin-right: 10px;
       position: relative; }
-      .content-item .overflow-hide .left .sh-tip {
-        width: 375px;
+      .content-item .overflow-hide-left .left .sh-tip-left img {
+        width: 300px;
         height: 160px;
         position: absolute;
         bottom: 0;
         left: 45%;
         transition: 1s; }
-        .content-item .overflow-hide .left .sh-tip:hover {
+        .content-item .overflow-hide-left .left .sh-tip-left img:hover {
           left: 40%; }
-    .content-item .overflow-hide .right {
+  .content-item .overflow-hide-right {
+    float: right;
+    margin-left: 20px;
+    width: 570px;
+    height: 160px; }
+    .content-item .overflow-hide-right .right {
       margin-right: 10px;
       position: relative; }
-      .content-item .overflow-hide .right .sh-tip {
-        width: 375px;
+      .content-item .overflow-hide-right .right .sh-tip-right img {
+        width: 340px;
         height: 160px;
         position: absolute;
         bottom: 0;
-        left: 45%;
+        left: 230px;
         transition: 1s; }
-        .content-item .overflow-hide .right .sh-tip:hover {
-          left: 40%; }
+        .content-item .overflow-hide-right .right .sh-tip-right img:hover {
+          left: 200px; }
 
-.wrapper {
+.wrappers {
   height: 24px;
-  margin: 22px 0; }
+  margin: 22px 0;
+  overflow: hidde; }
 
-.discounts {
-  width: 575px;
-  overflow: hidden; }
-  .discounts .diy-trial .trail-title .sale-list {
-    margin: 20px 0;
+.discounts .discounts-left {
+  width: 570px;
+  float: left; }
+  .discounts .discounts-left .sale-list {
     height: 246px;
-    position: relative; }
-    .discounts .diy-trial .trail-title .sale-list ul li {
+    position: relative;
+    overflow: hidden; }
+    .discounts .discounts-left .sale-list ul {
+      height: 246px;
+      position: absolute; }
+      .discounts .discounts-left .sale-list ul li {
+        float: left;
+        width: 190px;
+        height: 246px;
+        background: #fff; }
+        .discounts .discounts-left .sale-list ul li img {
+          width: 160px;
+          height: 160px; }
+    .discounts .discounts-left .sale-list .prev-btn {
+      position: absolute;
+      font-size: 50px;
+      background: #ccc;
+      color: #fff;
+      top: 50%;
+      left: 0;
+      display: none; }
+    .discounts .discounts-left .sale-list .next-btn {
+      position: absolute;
+      font-size: 50px;
+      background: #ccc;
+      color: #fff;
+      top: 50%;
+      right: 0;
+      display: none; }
+    .discounts .discounts-left .sale-list:hover .next-btn {
+      display: block; }
+    .discounts .discounts-left .sale-list:hover .prev-btn {
+      display: block; }
+.discounts .discounts-right {
+  width: 570px;
+  float: right; }
+  .discounts .discounts-right .discounts-right-body {
+    margin: 20px 0; }
+    .discounts .discounts-right .discounts-right-body .discounts-right-item {
+      width: 189px;
+      height: 246px;
+      float: left;
+      border-right: 1px dashed #ccc;
+      position: relative; }
+      .discounts .discounts-right .discounts-right-body .discounts-right-item h3 {
+        color: #996cbe;
+        line-height: 32px; }
+      .discounts .discounts-right .discounts-right-body .discounts-right-item p {
+        font-size: 10px; }
+      .discounts .discounts-right .discounts-right-body .discounts-right-item a img {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        transition: 1s; }
+        .discounts .discounts-right .discounts-right-body .discounts-right-item a img:hover {
+          right: 30px; }
+
+.jiyou .diy-floor {
+  margin-top: 14px;
+  margin-bottom: 11px; }
+  .jiyou .diy-floor .floor-main {
+    height: 440px;
+    margin: 10px; }
+    .jiyou .diy-floor .floor-main .leftAD {
+      float: left;
+      height: 440px;
+      width: 190px;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      transition: 1s; }
+      .jiyou .diy-floor .floor-main .leftAD:hover img {
+        width: 200px;
+        height: 300px; }
+      .jiyou .diy-floor .floor-main .leftAD img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 190px;
+        height: 290px;
+        z-index: -1; }
+      .jiyou .diy-floor .floor-main .leftAD .textAD {
+        padding: 0 20px;
+        width: 190px;
+        position: absolute;
+        bottom: 150px;
+        left: 0;
+        line-height: 34px;
+        background: #504d94;
+        opacity: 0.6;
+        color: #fff; }
+        .jiyou .diy-floor .floor-main .leftAD .textAD a {
+          color: #fff; }
+        .jiyou .diy-floor .floor-main .leftAD .textAD em {
+          display: block;
+          float: right; }
+      .jiyou .diy-floor .floor-main .leftAD .bottomtext {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 150px;
+        width: 190px;
+        padding: 30px;
+        background: #734e8b;
+        color: #fff;
+        box-sizing: border-box; }
+        .jiyou .diy-floor .floor-main .leftAD .bottomtext h3 {
+          text-align: center;
+          margin-bottom: 5px; }
+    .jiyou .diy-floor .floor-main .shop-list {
+      margin-left: 10px;
+      width: 760px;
+      height: 440px;
+      overflow: hidden;
       float: left; }
+      .jiyou .diy-floor .floor-main .shop-list ul li {
+        float: left;
+        width: 190px;
+        height: 220px;
+        position: relative;
+        border-right: 1px dashed #ccc;
+        border-bottom: 1px dashed #ccc; }
+        .jiyou .diy-floor .floor-main .shop-list ul li a img {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          right: 5px;
+          bottom: 5px;
+          transition: 1s; }
+          .jiyou .diy-floor .floor-main .shop-list ul li a img:hover {
+            right: 20px; }
+    .jiyou .diy-floor .floor-main .rightAD {
+      float: left; }
+      .jiyou .diy-floor .floor-main .rightAD ul li {
+        width: 190px;
+        height: 110px;
+        position: relative; }
+        .jiyou .diy-floor .floor-main .rightAD ul li a img {
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          right: 5px;
+          bottom: 5px;
+          transition: 1s; }
+          .jiyou .diy-floor .floor-main .rightAD ul li a img:hover {
+            right: 15px; }
+  .jiyou .diy-floor .brand-link {
+    background: #d5cadc; }
+    .jiyou .diy-floor .brand-link .link-list {
+      height: 46px; }
+      .jiyou .diy-floor .brand-link .link-list span {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 16px;
+        line-height: 46px;
+        color: #734e8b; }
+      .jiyou .diy-floor .brand-link .link-list a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #734e8b; }
+      .jiyou .diy-floor .brand-link .link-list s {
+        display: inline-block;
+        width: 1px;
+        height: 14px;
+        background: #fff; }
+
+.diy-tip {
+  display: block;
+  width: 170px;
+  height: 64px;
+  line-height: 18px;
+  padding: 12px 10px; }
+  .diy-tip h3 {
+    font-size: 12px;
+    color: #e29392;
+    line-height: 36px; }
+  .diy-tip p {
+    font-size: 10px;
+    color: #000; }
+
+.more_good ul li {
+  float: left;
+  width: 226px;
+  height: 295px;
+  margin: 0 10px 10px 0;
+  background: white;
+  transition: 1s; }
+  .more_good ul li img {
+    display: block;
+    margin: 5px;
+    width: 202px;
+    height: 202px; }
+  .more_good ul li p {
+    font-size: 12px;
+    line-height: 40px;
+    padding-left: 20px; }
+  .more_good ul li span {
+    color: red;
+    padding-left: 20px; }
+  .more_good ul li:hover {
+    box-shadow: 0px 5px 15px #888; }
+
+.loadmore {
+  margin: 20px 0 30px 0; }
+  .loadmore #loadmore-btn {
+    margin-left: 43%;
+    display: block;
+    width: 200px;
+    height: 40px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 5px 5px 3px #ccc insrt;
+    transition: 1s; }
+    .loadmore #loadmore-btn:hover {
+      color: #fff;
+      background: red; }
+
+.promise a {
+  width: 220px;
+  float: left;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 30px;
+  text-decoration: none; }
+  .promise a dl dt {
+    float: left;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/icon.png) -5px -234px no-repeat; }
+  .promise a dl dd h4 {
+    font-size: 20px;
+    line-height: 26px;
+    color: #333333;
+    margin-right: 5px; }
+  .promise a dl dd p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #ccc; }
+
+.foot-help dl {
+  float: left;
+  height: 110px;
+  width: 180px;
+  margin-top: 30px;
+  box-sizing: border-box; }
+  .foot-help dl dt {
+    font-size: 14px;
+    padding-left: 8px; }
+  .foot-help dl dd {
+    padding-left: 10px;
+    margin-top: 10px; }
+    .foot-help dl dd a {
+      display: block;
+      line-height: 25px;
+      color: #9c9c9c; }
+
+hr {
+  margin: 0; }
+
+footer ul {
+  margin-top: 40px; }
+  footer ul li {
+    font-size: 12px; }
+    footer ul li a {
+      color: #000; }
+
+footer .list_1 {
+  margin-left: 127px;
+  margin-bottom: 24px; }
+
+footer .list_1 a {
+  margin: 0 20px; }
+
+footer .list_1 s {
+  display: inline-block;
+  height: 12px;
+  width: 2px;
+  background: #ead9cf; }
+
+footer .list_2,
+footer .list_3,
+footer .list_4,
+footer .list_5 {
+  margin-bottom: 15px;
+  color: #999999; }
+
+footer .list_2 {
+  margin-left: 167px; }
+
+footer .list_3 {
+  margin-left: 202px; }
+
+footer .list_4 {
+  margin-left: 382px; }
+
+footer .list_5 {
+  margin-left: 434px; }
+
+footer .list_6 {
+  overflow: hidden;
+  margin-left: 150px; }
+
+footer .list_6 .s1,
+footer .list_6 .s2,
+footer .list_6 .s3,
+footer .list_6 .s4,
+footer .list_6 .s5,
+footer .list_6 .s6 {
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin-left: 15px; }
+
+footer .list_6 .s1 {
+  background: url(../img/botpic1c.jpg); }
+
+footer .list_6 .s2 {
+  background: url(../img/bottom_large_img.png) no-repeat; }
+
+footer .list_6 .s3 {
+  background: url(../img/bot_link.jpg) 0 -50px no-repeat; }
+
+footer .list_6 .s4 {
+  background: url(../img/bot_link.jpg) 0 -100px no-repeat; }
+
+footer .list_6 .s5 {
+  background: url(../img/bot_link.jpg) no-repeat; }
+
+footer .list_6 .s6 {
+  background: url(../img/bot_link.jpg) 0 -50px no-repeat; }
 
 /*# sourceMappingURL=index.css.map */

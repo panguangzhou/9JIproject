@@ -4,7 +4,7 @@
     require('connect.php');
 
     //编写sql语句
-    $sql = "select * from goodlist";
+    $sql = "select * from moregoods";
 
     //查询结果集
     $result = $conn->query($sql);
