@@ -1,0 +1,177 @@
+.nav {
+  height: 31px;
+  background: #e3e4e5;
+  font-size: 12px;
+  color: #6b6b6b;
+  line-height: 31px; }
+  .nav .nav_left {
+    float: left; }
+    .nav .nav_left a {
+      height: 31px;
+      color: #333333; }
+      .nav .nav_left a i {
+        width: 12px;
+        height: 16px;
+        display: inline-block;
+        background: url("../img/weizhi.png") no-repeat; }
+    .nav .nav_left p {
+      margin-left: 15px;
+      display: inline-block; }
+      .nav .nav_left p a {
+        display: inline-block;
+        margin-left: 8px; }
+  .nav .nav_menu {
+    padding-left: 206px;
+    float: left; }
+    .nav .nav_menu ul li {
+      float: left;
+      padding: 0px 12px; }
+      .nav .nav_menu ul li a {
+        color: #6b6b6b; }
+      .nav .nav_menu ul li i {
+        display: inline-block; }
+    .nav .nav_menu ul .user i {
+      width: 9px;
+      height: 7px;
+      background: url(../img/icon_v1.png) -19px -6px no-repeat; }
+    .nav .nav_menu ul .vip i {
+      width: 1px;
+      height: 1px; }
+    .nav .nav_menu ul .app i {
+      width: 10px;
+      height: 15px;
+      line-height: 31px;
+      vertical-align: text-top;
+      margin-right: 3px;
+      background: url(../img/icon_v1.png) -35px 0 no-repeat; }
+    .nav .nav_menu ul .sitemap i {
+      width: 9px;
+      height: 7px;
+      background: url(../img/icon_v1.png) -19px -6px no-repeat; }
+    .nav .nav_menu ul .info i {
+      width: 15px;
+      height: 15px;
+      background: url(../img/nav_info.png) no-repeat;
+      vertical-align: text-top;
+      margin-right: 3px; }
+    .nav .nav_menu ul .phone a {
+      line-height: 31px;
+      font-size: 10px;
+      color: #c80f1e; }
+    .nav .nav_menu ul .phone i {
+      width: 18px;
+      height: 18px;
+      background: url(../img/nav_phone.png) no-repeat;
+      vertical-align: text-top;
+      margin-right: 3px; }
+
+header {
+  height: 145px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 2px solid #c80f1e; }
+  header .logo {
+    float: left;
+    width: 220px; }
+    header .logo a {
+      color: #fff; }
+    header .logo .fenlei {
+      margin-top: 38px;
+      float: left;
+      width: 220px;
+      height: 47px;
+      color: #fff;
+      background: #c80f1e;
+      line-height: 47px;
+      text-align: center; }
+  header .search {
+    padding-left: 75px;
+    padding-top: 25px;
+    background: #f7f7f7;
+    width: 750px;
+    float: left; }
+    header .search .input-group {
+      border: 1px solid #c80f1e; }
+      header .search .input-group #input-search {
+        width: 460px; }
+      header .search .input-group .input-group-addon {
+        background: #c80f1e;
+        color: #fff; }
+    header .search p {
+      margin-top: 5px; }
+      header .search p a {
+        color: #6b6b6b; }
+    header .search .search-nav {
+      font-size: 16px;
+      padding-top: 16px; }
+      header .search .search-nav ul li {
+        float: left;
+        line-height: 45px;
+        margin: 0 8px; }
+        header .search .search-nav ul li a {
+          color: #333333; }
+  header .buyCart {
+    padding-toP: 50px;
+    width: 158px;
+    height: 36px;
+    float: left; }
+    header .buyCart a {
+      display: inline-block;
+      width: 158px;
+      height: 36px;
+      border: 1px solid #ccc;
+      line-height: 36px;
+      text-align: center; }
+      header .buyCart a i {
+        display: inline-block;
+        width: 23px;
+        height: 21px;
+        background: url(../img/icon_v1.png) -153px -141px no-repeat; }
+      header .buyCart a span {
+        display: inline-block;
+        width: 15px;
+        height: 15px; }
+
+.main-top {
+  height: 40px;
+  line-height: 40px; }
+  .main-top s {
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    background: url(../img/weizhi.png) no-repeat; }
+
+.main .shopinfoimg {
+  float: left;
+  width: 400px;
+  height: 636px;
+  background: orange; }
+  .main .shopinfoimg .bigpic {
+    width: 400px;
+    height: 400px;
+    background: red; }
+  .main .shopinfoimg .shopinglist {
+    width: 400px;
+    height: 200px;
+    background: pink; }
+.main .shopinfobuy {
+  float: left;
+  width: 720px;
+  height: 636px;
+  background: skyblue; }
+
+.news {
+  margin-top: 30px; }
+  .news .news-left {
+    float: left;
+    height: 800px;
+    width: 220px;
+    background: green; }
+  .news .news-right {
+    margin-left: 30px;
+    float: left;
+    width: 800px;
+    height: 800px;
+    background: #f60; }
+
+/*# sourceMappingURL=goods.css.map */

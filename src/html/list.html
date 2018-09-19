@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品列表页</title>
+	<script src="../lib/jquery-1.10.1.min.js"></script>
+	<link rel="stylesheet" href="../lib/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/list.css">
+	<script src="../js/common.js"></script>
+	<script src="../js/list.js"></script>
+	<script src="../js/list-1.js"></script>
+	<script src="../js/list-2.js"></script>
+	<script src="../js/list-3.js"></script>
+	<style>
+	.container{
+		width: 1200px;
+		margin: 0 auto;
+	}
+</style>
+</head>
+<body>
+	<!-- top-nav -->
+	<div class="nav clearfix">
+		<div class="container">
+			<div class="nav_left">
+				<a href="#">
+					<i></i>
+					广州市
+				</a>
+				<p>
+					<i>Hi,欢迎来到九机!</i>
+					<a href="html/login.html">登录</a>
+					<a href="html/reg.html">免费注册</a>
+				</p>
+			</div>
+			<div class="nav_menu">
+				<ul>
+					<li class="user"><a href="#">个人中心</a><i></i></li>
+					<li class="vip"><i></i><a href="#">会员俱乐部</a></li>
+					<li class="help"><a href="#">帮助中心</a></li>
+					<li class="app"><i></i><a href="#">客户端</a></li>
+					<li class="kefu"><a href="#">在线客服</a></li>
+					<li class="sitemap"><a href="#">在线导航</a><i></i></li>
+					<li class="info"><i></i><a href="#">不良信息举报</a></li>
+					<li class="phone"><i></i><a href="#">400-008-393</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- header	 -->
+	<header>
+		<div class="container clearfix">
+			<div class="logo">
+				<a href="../index.html">
+					<img src="../img/new-logo.png" alt="">
+				</a>
+				<div class="fenlei">
+					<a href="#"><span>全部商品分类</span></a>
+				</div>
+			</div>
+
+			<div class="search">
+				<form class="form-inline">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="iponeXXXX" id="input-search">
+							<div class="input-group-addon">搜索</div>
+						</div>
+					</div>
+				</form>
+				<p>热门搜索：
+					<a href="#">ipone xs</a>
+					<a href="#">nova 3</a>
+					<a href="#">vivo x23</a>
+					<a href="#">OPPO R17</a>
+					<a href="#">华为 P20</a>
+					<a href="#">荣耀 8X</a>
+					<a href="#">小米8</a>
+					<a href="#">荣耀</a>
+				</p>
+				<div class="search-nav">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="#">旧机回收</a></li>
+						<li><a href="">一手优品</a></li>
+						<li><a href="#">售后维修</a></li>
+						<li><a href="#">九机头条</a></li>
+						<li><a href="#">九机小店</a></li>
+						<li><a href="#">人气排行</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="buyCart">
+				<a href="#">
+					<i></i>
+					购物车
+					<span>0</span>
+				</a>
+			</div>
+		</div>	
+	</header>
+
+	<!-- 二级导航栏 -->
+				<!-- <div class="main-goods">
+				<ul>
+					<li class="main-goods-1">
+						<p><i></i>手机通讯<s>&gt;</s></p>
+						<span>
+							<a href="#">phone XS</a><a href="#">荣耀10</a><a href="#">OPPO R17</a>
+						</span>
+						<span>
+							<a href="#">vivo X23</a>
+							<a href="#">华为nova 3</a>
+							<a href="#">小米8</a>
+						</span>
+					</li>
+					<li class="main-goods-2">
+						<p><i></i>手机通讯<s>&gt;</s></p>
+						<span>
+							<a href="#">phone XS</a><a href="#">荣耀10</a><a href="#">OPPO R17</a>
+						</span>
+						<span>
+							<a href="#">vivo X23</a>
+							<a href="#">华为nova 3</a>
+							<a href="#">小米8</a>
+						</span>
+					</li>
+					<li class="main-goods-3">
+						<p><i></i>手机通讯<s>&gt;</s></p>
+						<span>
+							<a href="#">phone XS</a><a href="#">荣耀10</a><a href="#">OPPO R17</a>
+						</span>
+						<span>
+							<a href="#">vivo X23</a>
+							<a href="#">华为nova 3</a>
+							<a href="#">小米8</a>
+						</span>
+					</li>
+					<li class="main-goods-4">
+						<p><i></i>手机通讯<s>&gt;</s></p>
+						<span>
+							<a href="#">phone XS</a><a href="#">荣耀10</a><a href="#">OPPO R17</a>
+						</span>
+						<span>
+							<a href="#">vivo X23</a>
+							<a href="#">华为nova 3</a>
+							<a href="#">小米8</a>
+						</span>
+					</li>
+					<li class="main-goods-5">
+						<p><i></i>手机通讯<s>&gt;</s></p>
+						<span>
+							<a href="#">phone XS</a><a href="#">荣耀10</a><a href="#">OPPO R17</a>
+						</span>
+						<span>
+							<a href="#">vivo X23</a>
+							<a href="#">华为nova 3</a>
+							<a href="#">小米8</a>
+						</span>
+					</li>
+					<li class="main-goods-6">
+						<p><i></i>手机通讯<s>&gt;</s></p>
+						<span>
+							<a href="#">phone XS</a><a href="#">荣耀10</a><a href="#">OPPO R17</a>
+						</span>
+						<span>
+							<a href="#">vivo X23</a>
+							<a href="#">华为nova 3</a>
+							<a href="#">小米8</a>
+						</span>
+					</li>
+				</ul>
+				<div class="main-item">
+					<div class="main-item-left">
+						<div class="item-1">
+							<span>热门品牌</span>
+							<p>
+								<a href="#">苹果</a><s></s>
+								<a href="#">华为</a><s></s>
+								<a href="#">荣耀</a><s></s>
+								<a href="#">小米</a><s></s>
+								<a href="#">三星</a><s></s>	
+								<a href="#">魅族</a><s></s>
+								<a href="#">OPPO</a><s></s>
+								<a href="#">vivo</a><s></s>
+								<a href="#">美图</a><s></s>
+								<a href="#">一加</a><s></s>
+								<a href="#">锤子</a><s></s>
+								<a href="#">360手机</a><s></s>
+								<a href="#">全部手机</a><s></s>
+							</p>
+						</div>
+						<hr>
+						<div class="item-1">
+							<span>热门品牌</span>
+							<p>
+								<a href="#">苹果</a><s></s>
+								<a href="#">华为</a><s></s>
+								<a href="#">荣耀</a><s></s>
+								<a href="#">小米</a><s></s>
+								<a href="#">三星</a><s></s>	
+								<a href="#">魅族</a><s></s>
+								<a href="#">OPPO</a><s></s>
+								<a href="#">vivo</a><s></s>
+								<a href="#">美图</a><s></s>
+								<a href="#">一加</a><s></s>
+								<a href="#">锤子</a><s></s>
+								<a href="#">360手机</a><s></s>
+								<a href="#">全部手机</a><s></s>
+							</p>
+						</div>
+						<hr>
+						<div class="item-1">
+							<span>热门品牌</span>
+							<p>
+								<a href="#">苹果</a><s></s>
+								<a href="#">华为</a><s></s>
+								<a href="#">荣耀</a><s></s>
+								<a href="#">小米</a><s></s>
+								<a href="#">三星</a><s></s>	
+								<a href="#">魅族</a><s></s>
+								<a href="#">OPPO</a><s></s>
+								<a href="#">vivo</a><s></s>
+								<a href="#">美图</a><s></s>
+								<a href="#">一加</a><s></s>
+								<a href="#">锤子</a><s></s>
+								<a href="#">360手机</a><s></s>
+								<a href="#">全部手机</a><s></s>
+							</p>
+						</div>
+						<hr>
+						<div class="item-1">
+							<span>热门品牌</span>
+							<p>
+								<a href="#">苹果</a><s></s>
+								<a href="#">华为</a><s></s>
+								<a href="#">荣耀</a><s></s>
+								<a href="#">小米</a><s></s>
+								<a href="#">三星</a><s></s>	
+								<a href="#">魅族</a><s></s>
+								<a href="#">OPPO</a><s></s>
+								<a href="#">vivo</a><s></s>
+								<a href="#">美图</a><s></s>
+								<a href="#">一加</a><s></s>
+								<a href="#">锤子</a><s></s>
+								<a href="#">360手机</a><s></s>
+								<a href="#">全部手机</a><s></s>
+							</p>
+						</div>
+						<hr>
+					</div>
+					<div class="main-item-xx" style="padding-left: 30px;width:240px;float:left;padding-top: 25px;">
+						<div class="mian-item-top" style="height:244px;">
+							<h3 style="margin-bottom: 9px;">华为P20 旗舰爆品</h3>
+							<span style="display: block;margin-bottom: 20px;">专享300元换新补贴</span>
+							<a href="#">
+								<img src="../img/main-p20.png" alt="">
+							</a>
+						</div>
+						<hr>
+						<div class="main-item-bottom">
+							<h3 style="margin-bottom: 9px;">荣耀10 精品</h3>
+							<span style="display: block;margin-bottom: 20px;">低价官网现货热销!</span>
+							<a href="#">
+								<img src="../img/main-ry10.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>	 -->
+			<!-- main-top -->
+			<div class="main-top">
+				<div class="container">
+					<s></s>
+					<span>首页</span>
+					<i>/</i>
+					<span>手机通讯</span>
+					<i>/</i>
+					<span>手机</span>
+				</div>
+			</div>
+			<!-- main -->
+			<div class="main clearfix">
+				<div class="container">
+					<div class="main-left">
+						<div class="main-left-top">
+							<div class="panel-group" id="accordion">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" 
+											href="#collapseOne">
+											手机通讯
+										</a>
+									</h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" 
+										href="#collapseTwo">
+										手机
+									</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" 
+									href="#collapseOne">
+									手机配件
+								</a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse">
+							<div class="panel-body">
+								<p><a href="#">真的是手机</a></p>
+								<p><a href="#">真的是手机</a></p>
+								<p><a href="#">真的是手机</a></p>
+								<p><a href="#">真的是手机</a></p>
+								<p><a href="#">真的是手机</a></p>
+								<p><a href="#">真的是手机</a></p>
+								<p><a href="#">真的是手机</a></p>
+								<p><a href="#">真的是手机</a></p>
+								<p><a href="#">真的是手机</a></p>
+								<p><a href="#">真的是手机</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" 
+								href="#collapseTwo">
+								浏览了最终购买了
+							</a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse in">
+						<div class="panel-body" id="pan">
+
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" 
+							href="#collapseThree">
+							浏览了还买了
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse in">
+					<div class="panel-body">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="main-right">
+	<div class="main-right-top">
+		<ul>
+			<li class="creening-1"><span>手机</span><s>共搜索到266个商标</s></li>
+			<li class="creening-2">
+				<span>品牌</span>
+				<div class="creening-title">
+					<a href="#"><img src="../img/ipone-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/huawei-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/xiaomi-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/meizu-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/ipone-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/huawei-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/xiaomi-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/ipone-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/huawei-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/xiaomi-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/meizu-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/huawei-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/ipone-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/meizu-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/xiaomi-logo.jpg" alt=""></a>
+					<a href="#"><img src="../img/ipone-logo.jpg" alt=""></a>
+				</div>
+			</li>
+			<li class="creening-3">
+				<span>价格</span>
+				<div class="xuxian">
+					<span>全部</span>
+					<s>0-599</s>
+					<s>600-999</s>
+					<s>1000-1999</s>
+					<s>2000-2999</s>
+					<s>3000-3999</s>
+					<s>4000-4999</s>
+					<s>5000</s>
+				</div>
+			</li>
+			<li class="creening-3"><span>网络制式</span>
+				<div class="xuxian">
+					<span>全部</span>
+					<s>4G全网通</s>
+					<s>4+全网通</s>
+					<s>移动4G</s>
+					<s>联通4G</s>
+					<s>电信4G</s>
+					<s>移动3G</s>
+					<s>联通3G</s>
+					<s>电信3G</s>
+				</div></li>
+				<li class="creening-3"><span>指纹识别</span>
+					<div class="xuxian">
+						<span>全部</span>
+						<s>不支持</s>
+						<s>支持正面指纹识别</s>
+						<s>支持背面值为识别</s>
+						<s>支持侧面指纹识别</s>
+						<s>屏幕指纹识别</s>
+					</div></li>
+					<li class="creening-3"><span>产品特点</span>
+						<div class="xuxian">
+							<span>全部</span>
+							<s>面部解锁</s>
+							<s>无线充电</s>
+							<s>屏幕指纹</s>
+							<s>全面屏</s>
+							<s>后置双摄像</s>
+							<s>前置双摄像头</s>
+							<s>后置三摄像头</s>
+							<s>2k屏幕</s>
+							<s>虹膜识别</s>
+							<s>支持NFC</s>
+						</div></li>
+						<li class="creening-3"><span>屏幕尺寸</span>
+							<div class="xuxian">
+								<span>全部</span>
+								<s>6.0英寸</s>
+								<s>5.5英寸</s>
+								<s>5.0英寸</s>
+								<s>4.5英寸</s>
+								<s>4.0英寸</s>
+								<s>3.8英寸</s>
+								<s>其他</s>
+							</div></li>
+							<li class="more-btn">
+								<button id="more-btn">更多选项</button>
+							</li>
+						</ul>
+					</div>
+					<div class="sort-bar">
+						<div class="sort-item" id="zonghe">
+							<a href="javascript:;">综合</a>
+						</div>
+						<div class="sort-item" id="price">
+							<a href="javascript:;">价格</a>
+							<s></s>
+						</div>
+						<div class="sort-item" id="newgoods">
+							<a href="javascript:;">新品优先</a>
+						</div>
+					</div>
+					<div class="list">
+					</div>
+					<div id="page">
+					</div>
+					<h5>猜你喜欢的手机</h5>
+					<div class="youlike">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="promise clearfix">
+		<div class="container">
+			<a href="#">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>新九机 心生态</h4>
+						<p>全新九机 用心可见</p>
+					</dd>
+				</dl>
+			</a>
+			<a href="#">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>新九机 心生态</h4>
+						<p>全新九机 用心可见</p>
+					</dd>
+				</dl>
+			</a>
+			<a href="#">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>新九机 心生态</h4>
+						<p>全新九机 用心可见</p>
+					</dd>
+				</dl>
+			</a>
+			<a href="#">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>新九机 心生态</h4>
+						<p>全新九机 用心可见</p>
+					</dd>
+				</dl>
+			</a>
+		</div>
+	</div>
+	<hr>
+	<div class="foot-help clearfix">
+		<div class="container">
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer>
+		<div class="container clearfix">
+			<ul>
+				<li class="list_1">
+					<a href="#">常见问题</a><s></s>
+					<a href="#">供应商申请</a><s></s>
+					<a href="#">配送方式</a><s></s>
+					<a href="#">招聘信息</a><s></s>
+					<a href="#">关于我们</a><s></s>
+					<a href="#">联系我们</a><s></s>
+					<a href="#">投诉建议</a><s></s>
+					<a href="#">地区报价</a><s></s>
+					<a href="#">加盟招商</a><s></s>
+					<a href="#">IT服务</a>
+				</li>
+				<li class="list_2">
+					<span>各门店营业时间：周一至周日 09:00-21:30</span>
+					<span>全国服务热线：400-008-3939&nbsp;&nbsp;0871-68393939</span>
+					<span>工作时间：周一至周日 09:00-21:30</span>
+				</li>
+				<li class="list_3">
+					<span>网站ICP备案号：<a href="#">滇ICP备06002001号</a></span>
+					<span>电信业务经营许可证：滇B2-20110012号</span>
+					<span><a href="#">滇公网安备 53010202000261号</a></span>
+				</li>
+				<li class="list_4">
+					<span>Copyright@2006-2018九机网 All RIghts Reserved</span>
+				</li>
+				<li class="list_5">
+					<span>云南九机信息技术有限公司版权所有</span>
+				</li>
+				<li class="list_6">
+					<a href="#" class="s1"></a>
+					<a href="#" class="s2"></a>
+					<a href="#" class="s3"></a>
+					<a href="#" class="s4"></a>
+					<a href="#" class="s5"></a>
+					<a href="#" class="s6"></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	</body>
+	</html>
