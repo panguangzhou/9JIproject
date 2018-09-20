@@ -146,7 +146,6 @@ header {
   #main .main-left {
     width: 219px;
     float: left;
-    padding: 0;
     background: #818181;
     position: relative;
     box-sizing: boder-box; }

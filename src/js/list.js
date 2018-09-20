@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded',(e) => {
 					 				height:50px;"></a>
 					 				</div>
 					 				<span>${item.title}</span>
-					 				<b>￥：${item.price}</b>
+					 				<b>￥${item.price}</b>
 					 				<p>已有${item.evalute}人评价</p>
 					 				<s>该商品可以分${item.fenqi}期</s>
 					 				</li>

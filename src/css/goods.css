@@ -141,40 +141,311 @@ header {
     height: 16px;
     background: url(../img/weizhi.png) no-repeat; }
 
-.main .shopinfoimg {
+.main .main-left {
   float: left;
-  width: 440px;
-  height: 636px;
-  background: orange; }
-  .main .shopinfoimg .bigpic {
-    width: 438px;
-    height: 438px;
-    border: 1px solid #ccc; }
-    .main .shopinfoimg .bigpic img {
-      width: 438px;
-      height: 438px; }
-  .main .shopinfoimg .shopinglist {
+  width: 400px;
+  height: 600px; }
+  .main .main-left #demo {
+    display: block;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    position: relative;
+    border: 1px solid #ccc;
+    overflow: hidden; }
+    .main .main-left #demo #small-box {
+      position: relative;
+      z-index: 1; }
+      .main .main-left #demo #small-box img {
+        width: 400px;
+        height: 400px; }
+    .main .main-left #demo #float-box {
+      display: none;
+      width: 160px;
+      height: 120px;
+      position: absolute;
+      background: #ffffcc;
+      border: 1px solid #ccc;
+      filter: alpha(opacity=50);
+      opacity: 0.5;
+      z-index: 3; }
+    .main .main-left #demo #big-box {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 460px;
+      width: 400px;
+      height: 300px;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      z-index: 1; }
+      .main .main-left #demo #big-box img {
+        position: absolute;
+        z-index: 5; }
+  .main .main-left .shopinglist {
     width: 440px;
-    height: 150px;
-    background: #000; }
-.main .shopinfobuy {
+    height: 72px; }
+    .main .main-left .shopinglist ul {
+      height: 72px;
+      overflow: hidden; }
+      .main .main-left .shopinglist ul li {
+        margin: 5px;
+        width: 70px;
+        height: 70px;
+        border: 1px solid #ccc;
+        float: left;
+        background: orange; }
+  .main .main-left .padding-bottom {
+    margin-top: 20px;
+    display: block;
+    height: 20px;
+    width: 400px; }
+    .main .main-left .padding-bottom span {
+      float: left;
+      display: inline-block;
+      line-height: 30px;
+      font-size: 16px; }
+    .main .main-left .padding-bottom .pbr {
+      float: right;
+      line-hegiht: 30px;
+      font-size: 16px; }
+      .main .main-left .padding-bottom .pbr a {
+        color: #ccc; }
+  .main .main-left .bdshare {
+    margin-top: 10px;
+    height: 30px; }
+    .main .main-left .bdshare a {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: url(../img/icon_v1.png) -96px -96px no-repeat; }
+.main .main-right {
+  padding-left: 20px;
   float: left;
   width: 720px;
-  height: 636px;
-  background: skyblue; }
+  height: 600px; }
+  .main .main-right .shopinfobuy h3 {
+    font-size: 18px;
+    line-height: 30px; }
+  .main .main-right .shopinfobuy ul li {
+    margin: 5px;
+    font-size: 16px;
+    line-heiht: 40px; }
+  .main .main-right .shopinfobuy ul .discount {
+    color: red;
+    font-size: 16px; }
+  .main .main-right .shopinfobuy ul .price {
+    font-size: 16px; }
+    .main .main-right .shopinfobuy ul .price span {
+      color: red; }
+  .main .main-right .shopinfobuy ul .color {
+    lin-height: 36px; }
+    .main .main-right .shopinfobuy ul .color a {
+      width: 90px;
+      height: 36px;
+      border: 1px solid #ccc;
+      display: inline-block;
+      background: url(../img/color.png) no-repeat; }
+  .main .main-right .shopinfobuy ul .sales a {
+    color: #000;
+    display: inline-block;
+    width: 90px;
+    height: 36px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 36px; }
+    .main .main-right .shopinfobuy ul .sales a:hover {
+      border: 1px solid red;
+      color: red; }
+  .main .main-right .shopinfobuy .ed a {
+    color: #000;
+    display: inline-block;
+    height: 36px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 36px; }
+    .main .main-right .shopinfobuy .ed a:hover {
+      border: 1px solid red;
+      color: red; }
+  .main .main-right .shopinfobuy .tc a {
+    color: #000;
+    display: inline-block;
+    height: 36px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 36px; }
+    .main .main-right .shopinfobuy .tc a:hover {
+      border: 1px solid red;
+      color: red; }
+  .main .main-right .shopinfobuy .gobuy .close {
+    float: left;
+    width: 122px;
+    height: 46px;
+    background: red;
+    color: #fff;
+    text-align: center;
+    line-height: 46px; }
+  .main .main-right .shopinfobuy .gobuy a {
+    display: inline-block;
+    width: 120px;
+    height: 44px;
+    color: #000;
+    text-align: center;
+    line-height: 46px;
+    border: 1px solid #000;
+    margin: 5px; }
 
 .news {
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
   .news .news-left {
     float: left;
-    height: 800px;
-    width: 220px;
-    background: green; }
+    width: 170px; }
+    .news .news-left .pj_info_hot {
+      wisth: 170px;
+      text-align: center; }
+      .news .news-left .pj_info_hot h4 {
+        width: 170px;
+        height: 40px;
+        border-bottom: 1px solid #000;
+        text-align: center;
+        line-height: 40px;
+        background: #ccc;
+        border-radius: 3px; }
+      .news .news-left .pj_info_hot img {
+        width: 170px;
+        height: 160px; }
   .news .news-right {
-    margin-left: 30px;
+    float: left; }
+    .news .news-right ul {
+      height: 40px; }
+      .news .news-right ul li {
+        float: left;
+        width: 100px;
+        height: 40px;
+        border-bottom: 1px solid #000;
+        text-align: center;
+        line-height: 40px;
+        background: #ccc; }
+
+.active {
+  background: #red;
+  color: #fff; }
+
+.promise a {
+  width: 220px;
+  float: left;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 30px;
+  text-decoration: none; }
+  .promise a dl dt {
     float: left;
-    width: 800px;
-    height: 800px;
-    background: #f60; }
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/icon.png) -5px -234px no-repeat; }
+  .promise a dl dd h4 {
+    font-size: 20px;
+    line-height: 26px;
+    color: #333333;
+    margin-right: 5px; }
+  .promise a dl dd p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #ccc; }
+
+.foot-help dl {
+  float: left;
+  height: 110px;
+  width: 180px;
+  margin-top: 30px;
+  box-sizing: border-box; }
+  .foot-help dl dt {
+    font-size: 14px;
+    padding-left: 8px; }
+  .foot-help dl dd {
+    padding-left: 10px;
+    margin-top: 10px; }
+    .foot-help dl dd a {
+      display: block;
+      line-height: 25px;
+      color: #9c9c9c; }
+
+hr {
+  margin: 0; }
+
+footer ul {
+  margin-top: 40px; }
+  footer ul li {
+    font-size: 12px; }
+    footer ul li a {
+      color: #000; }
+
+footer .list_1 {
+  margin-left: 127px;
+  margin-bottom: 24px; }
+
+footer .list_1 a {
+  margin: 0 20px; }
+
+footer .list_1 s {
+  display: inline-block;
+  height: 12px;
+  width: 2px;
+  background: #ead9cf; }
+
+footer .list_2,
+footer .list_3,
+footer .list_4,
+footer .list_5 {
+  margin-bottom: 15px;
+  color: #999999; }
+
+footer .list_2 {
+  margin-left: 167px; }
+
+footer .list_3 {
+  margin-left: 202px; }
+
+footer .list_4 {
+  margin-left: 382px; }
+
+footer .list_5 {
+  margin-left: 434px; }
+
+footer .list_6 {
+  overflow: hidden;
+  margin-left: 150px; }
+
+footer .list_6 .s1,
+footer .list_6 .s2,
+footer .list_6 .s3,
+footer .list_6 .s4,
+footer .list_6 .s5,
+footer .list_6 .s6 {
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin-left: 15px; }
+
+footer .list_6 .s1 {
+  background: url(../img/botpic1c.jpg); }
+
+footer .list_6 .s2 {
+  background: url(../img/bottom_large_img.png) no-repeat; }
+
+footer .list_6 .s3 {
+  background: url(../img/bot_link.jpg) 0 -50px no-repeat; }
+
+footer .list_6 .s4 {
+  background: url(../img/bot_link.jpg) 0 -100px no-repeat; }
+
+footer .list_6 .s5 {
+  background: url(../img/bot_link.jpg) no-repeat; }
+
+footer .list_6 .s6 {
+  background: url(../img/bot_link.jpg) 0 -50px no-repeat; }
 
 /*# sourceMappingURL=goods.css.map */

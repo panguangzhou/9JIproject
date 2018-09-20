@@ -3,8 +3,279 @@
 <head>
 	<meta charset="UTF-8">
 	<title>购物车</title>
+	<script src="../lib/jquery-1.10.1.min.js"></script>
+	<link rel="stylesheet" href="../lib/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../js/common.js"></script>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/car.css">
+	<script src="../js/car.js"></script>
 </head>
 <body>
-	
-</body>
-</html>
+	<!-- top-nav -->
+	<div class="nav clearfix">
+		<div class="container">
+			<div class="nav_left">
+				<a href="#">
+					<i></i>
+					广州市
+				</a>
+				<p>
+					<i>Hi,欢迎来到九机!</i>
+					<a href="login.html">登录</a>
+					<a href="reg.html">免费注册</a>
+				</p>
+			</div>
+			<div class="nav_menu">
+				<ul>
+					<li class="user"><a href="#">个人中心</a><i></i></li>
+					<li class="vip"><i></i><a href="#">会员俱乐部</a></li>
+					<li class="help"><a href="#">帮助中心</a></li>
+					<li class="app"><i></i><a href="#">客户端</a></li>
+					<li class="kefu"><a href="#">在线客服</a></li>
+					<li class="sitemap"><a href="#">在线导航</a><i></i></li>
+					<li class="info"><i></i><a href="#">不良信息举报</a></li>
+					<li class="phone"><i></i><a href="#">400-008-393</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- header -->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="../index.html">
+					<img src="../img/new-logo.png" alt="">
+				</a>
+			</div>
+			<div class="order-step">
+				<dl class="cur">
+					<dt>1</dt>
+					<dd>我的购物车</dd>
+				</dl>
+				<dl>
+					<dt>2</dt>
+					<dd>填写核对订单</dd>
+				</dl>
+				<dl>
+					<dt>3</dt>
+					<dd>付款</dd>
+				</dl>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+		<!-- cart-tab -->
+		<div class="cart-tab clearfix">
+			<div class="container">
+				<div class="top">
+					<div class="cart-left">
+						全部商品<span class="cartnumber"></span>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="allcheck">
+						<p>店铺</p>
+					</div>
+					<p class="p1">商品</p>
+					<p class="p2">单价</p>
+					<p class="p3">数量</p>
+					<p class="p4">小计</p>
+					<p class="p5">操作</p></div>
+					<ul class="cart-buy">
+						<li>
+							<p class="good_check"><input type="checkbox" name="good" id="" value=""/></p>
+							<p class="good_img"><img src="../img/huawei8.jpg" alt="" style="width:40px;height: 40px;"/></p>
+							<p class="good_name">华为8i</p>
+							<p class="good_price">￥：1334</p>
+							<p class="num">
+								<span class="cutnum">-</span>
+								<input class="nownum" type="text" value="1" />
+								<span class="addnum">+</span>
+							</p>
+							<p class="good_total">￥：1334</p>
+							<p class="good_del">
+								<a href="javascript:;">删除</a>
+							</p>
+						</li>
+						<li>
+							<p class="good_check"><input type="checkbox" name="good" id="" value=""/></p>
+							<p class="good_img"><img src="../img/huawei8.jpg" alt="" style="width:40px;height: 40px;"/></p>
+							<p class="good_name">华为8i</p>
+							<p class="good_price">￥：1334</p>
+							<p class="num">
+								<span class="cutnum">-</span>
+								<input class="nownum" type="text" value="1" />
+								<span class="addnum">+</span>
+							</p>
+							<p class="good_total">￥：1334</p>
+							<p class="good_del">
+								<a href="javascript:;">删除</a>
+							</p>
+						</li>
+					</ul>
+					<div id="del">
+						<p id="allchecked"><input type="checkbox" name="" id="" value="" />全选</p>
+						<p id="delall">
+							<a href="javascript:;">删除</a>
+						</p>
+						<div class="del-right">
+							<div class="cart-left">
+								全部商品<span class="cartnumber"></span>
+							</div>
+							<p class="right">
+								已选
+								<span id="allnum"></span>
+								件,合计(不含运费)
+								<b id="numprice"></b>
+							</p>
+							<a href="#">结算</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- news -->
+		<div class="news clearfix">
+			<div class="container">
+				
+			</div>
+		</div>
+			<div class="promise clearfix">
+		<div class="container">
+			<a href="#">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>新九机 心生态</h4>
+						<p>全新九机 用心可见</p>
+					</dd>
+				</dl>
+			</a>
+			<a href="#">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>新九机 心生态</h4>
+						<p>全新九机 用心可见</p>
+					</dd>
+				</dl>
+			</a>
+			<a href="#">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>新九机 心生态</h4>
+						<p>全新九机 用心可见</p>
+					</dd>
+				</dl>
+			</a>
+			<a href="#">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>新九机 心生态</h4>
+						<p>全新九机 用心可见</p>
+					</dd>
+				</dl>
+			</a>
+		</div>
+	</div>
+	<hr>
+	<div class="foot-help clearfix">
+		<div class="container">
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer>
+		<div class="container clearfix">
+			<ul>
+				<li class="list_1">
+					<a href="#">常见问题</a><s></s>
+					<a href="#">供应商申请</a><s></s>
+					<a href="#">配送方式</a><s></s>
+					<a href="#">招聘信息</a><s></s>
+					<a href="#">关于我们</a><s></s>
+					<a href="#">联系我们</a><s></s>
+					<a href="#">投诉建议</a><s></s>
+					<a href="#">地区报价</a><s></s>
+					<a href="#">加盟招商</a><s></s>
+					<a href="#">IT服务</a>
+				</li>
+				<li class="list_2">
+					<span>各门店营业时间：周一至周日 09:00-21:30</span>
+					<span>全国服务热线：400-008-3939&nbsp;&nbsp;0871-68393939</span>
+					<span>工作时间：周一至周日 09:00-21:30</span>
+				</li>
+				<li class="list_3">
+					<span>网站ICP备案号：<a href="#">滇ICP备06002001号</a></span>
+					<span>电信业务经营许可证：滇B2-20110012号</span>
+					<span><a href="#">滇公网安备 53010202000261号</a></span>
+				</li>
+				<li class="list_4">
+					<span>Copyright@2006-2018九机网 All RIghts Reserved</span>
+				</li>
+				<li class="list_5">
+					<span>云南九机信息技术有限公司版权所有</span>
+				</li>
+				<li class="list_6">
+					<a href="#" class="s1"></a>
+					<a href="#" class="s2"></a>
+					<a href="#" class="s3"></a>
+					<a href="#" class="s4"></a>
+					<a href="#" class="s5"></a>
+					<a href="#" class="s6"></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	</body>
+	</html>
