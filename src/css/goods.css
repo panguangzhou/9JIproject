@@ -143,17 +143,20 @@ header {
 
 .main .shopinfoimg {
   float: left;
-  width: 400px;
+  width: 440px;
   height: 636px;
   background: orange; }
   .main .shopinfoimg .bigpic {
-    width: 400px;
-    height: 400px;
-    background: red; }
+    width: 438px;
+    height: 438px;
+    border: 1px solid #ccc; }
+    .main .shopinfoimg .bigpic img {
+      width: 438px;
+      height: 438px; }
   .main .shopinfoimg .shopinglist {
-    width: 400px;
-    height: 200px;
-    background: pink; }
+    width: 440px;
+    height: 150px;
+    background: #000; }
 .main .shopinfobuy {
   float: left;
   width: 720px;

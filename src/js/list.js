@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded',(e) => {
 					 			ul.innerHTML = data.data.map((item) => {
 					 				return `
 					 				<li data-guid="${item.goodid}">
-					 				<a href="javascript:;" calss='big'><img src="${item.imgurl1}" 
+					 				<a href="goods.html" calss='big'><img src="${item.imgurl1}" 
 					 				style="width:190px;height:190px;"></a>
 					 				<div calss="sku-color">
 					 				<a href="#"><img src="${item.imgurl2}"style="width:50px;
@@ -91,7 +91,8 @@ document.addEventListener('DOMContentLoaded',(e) => {
 				price:currentLi.children[3].innerText,
 				title:currentLi.children[2].innerText,
 				imgurl:currentLi.children[0].children[0].src,
-				pingjia:currentLi.children[4].innerText
+				pingjia:currentLi.children[4].innerText,
+				discount:"官网直降200元"
 			};
 			goodslist.push(obj);
 			console.log(goodslist);
