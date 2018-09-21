@@ -1,21 +1,11 @@
 <?php
 
-	$servername ="localhost";
-	$username = "root";
-	$password ="";
-	$dbname="jiuji";
-
-	$conn = new mysqli($servername,$username,$password,$dbname);
-
-	if($conn->connect_error>0){
-		die('连接失败'.$conn->connect_error);
-	}	
-	$conn->set_charset('utf8');
+	include 'connect.php';
 
 	$username = isset($_GET['username'])?$_GET['username']:null;
 	$password = isset($_GET['password'])?$_GET['password']:null;
 
-	$password=md5($password);
+	// $password=md5($password);
 
 	$sql = "select * from admin where user='$username' and paw='$password'";
 

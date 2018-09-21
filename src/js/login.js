@@ -27,7 +27,7 @@ $(function(){
 			let data = xhr.responseText;
 			console.log(data)
 			if(data === 'sueecss'){
-				location.href='../indxe.html';
+				location.href='../index.html';
 			}else if(data==='fail'){
 				alert('没有该用户');
 			}

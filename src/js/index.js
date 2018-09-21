@@ -68,7 +68,7 @@
 						<h3>${item.title}</h3>
 						<p>${item.txt}</p>
 						<p style="color:rgb(136,78,168);">￥:${item.price}</p>
-						<a href="#">
+						<a href="html/list.html">
 							<img src="${item.imgurl}" alt="" />	
 						</a>
 					</div>
@@ -95,7 +95,7 @@
 					<div class="diy-tip">
 						<h3>${item.title}</h3>
 						<p>${item.txt}</p>
-						<a href="#">
+						<a href="html/list.html">
 							<img src="${item.imgurl}" alt="" />	
 						</a>
 					</div>
@@ -120,7 +120,7 @@
 				let more_good = document.querySelector('#more_good');
 				ul.innerHTML=data.map((item) => {
 					return `<li>
-						<a href="#">
+						<a href="html/list.html">
 							<img src="${item.imgrl}" alt="" />
 						</a>
 						<p>${item.title}</p>

@@ -3,17 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>商品详情页</title>
-	<script src="../lib/jquery-1.10.1.min.js"></script>
-	<link rel="stylesheet" href="../lib/bootstrap.min.css">
-	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="../js/common.js"></script>
+	<script src="../js/goods.js"></script>
+	<link rel="stylesheet" href="../lib/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/goods.css">
-	<script src="../js/goods.js"></script>
+	<link href="../lib/jquery.exzoom.css" rel="stylesheet" type="text/css"/>
 	<style>
 	.container{
 		width: 1200px;
 		margin: 0 auto;
+	}
+	#exzoom {
+		width: 400px;
+		/*height: 400px;*/
+		margin: 20px auto;
 	}
 </style>
 </head>
@@ -119,40 +123,27 @@
 	<!-- main -->
 	<div class="main clearfix">
 		<div class="container">
+			<!-- 建立显示原图窗口 -->
 			<div class="main-left">
-				<!-- 放大镜 -->
-				<div id="demo">
-					<div id="small-box">
+				
+				<div class="exzoom" id="exzoom"> 
+					<!--大图区域-->
+					<div class="exzoom_img_box">
+						<ul class='exzoom_img_ul'>
+							<li><img src=""/></li>
+							<li><img src=""/></li>
+							<li><img src=""/></li>
+							<li><img src=""/></li>
+							<li><img src=""/></li>
+							<li><img src=""/></li>
+							<li><img src=""/></li>
+							<li><img src=""/></li>
+						</ul>
 					</div>
-					<div id="float-box"></div>
-					<div id="big-box">
-						<img src="" alt="">
-					</div>
-				</div>
-				<div class="shopinglist">
-					<ul>
-						<li>1</li>
-						<li>1</li>
-						<li>1</li>
-						<li>1</li>
-						<li>1</li>
-						<li>1</li>
-					</ul>
-				</div>
-				<div class="padding-bottom">
-					<span></span>
-					<div class="pbr">
-						<a href="#"><s></s>发送到手机</a>
-						<a href="#"><s></s>收藏</a>
-						<a href="#"><s></s>对比</a>
-					</div>
-				</div>
-				<div class="bdshare">
-					<span>分享到</span>
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
+					<!--缩略图导航-->
+					<div class="exzoom_nav"></div>
+					<!--控制按钮-->
+					<p class="exzoom_btn"> <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; </a> <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a> </p>
 				</div>
 			</div>
 			<div class="main-right">
@@ -239,141 +230,158 @@
 			</div>
 		</div>
 	</div>
-			<div class="promise clearfix">
-			<div class="container">
-				<a href="#">
-					<dl>
-						<dt></dt>
-						<dd>
-							<h4>新九机 心生态</h4>
-							<p>全新九机 用心可见</p>
-						</dd>
-					</dl>
-				</a>
-				<a href="#">
-					<dl>
-						<dt></dt>
-						<dd>
-							<h4>新九机 心生态</h4>
-							<p>全新九机 用心可见</p>
-						</dd>
-					</dl>
-				</a>
-				<a href="#">
-					<dl>
-						<dt></dt>
-						<dd>
-							<h4>新九机 心生态</h4>
-							<p>全新九机 用心可见</p>
-						</dd>
-					</dl>
-				</a>
-				<a href="#">
-					<dl>
-						<dt></dt>
-						<dd>
-							<h4>新九机 心生态</h4>
-							<p>全新九机 用心可见</p>
-						</dd>
-					</dl>
-				</a>
-			</div>
+	<div class="promise clearfix">
+		<div class="container">
+			<a href="#">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>新九机 心生态</h4>
+						<p>全新九机 用心可见</p>
+					</dd>
+				</dl>
+			</a>
+			<a href="#">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>新九机 心生态</h4>
+						<p>全新九机 用心可见</p>
+					</dd>
+				</dl>
+			</a>
+			<a href="#">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>新九机 心生态</h4>
+						<p>全新九机 用心可见</p>
+					</dd>
+				</dl>
+			</a>
+			<a href="#">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>新九机 心生态</h4>
+						<p>全新九机 用心可见</p>
+					</dd>
+				</dl>
+			</a>
 		</div>
-		<hr>
-		<div class="foot-help clearfix">
-			<div class="container">
-				<dl>
-					<dt>新手指南</dt>
-					<dd>
-						<a href="#">购物流程</a>
-						<a href="#">九机测评</a>
-						<a href="#">积分计划</a>
-					</dd>
-				</dl>
-				<dl>
-					<dt>新手指南</dt>
-					<dd>
-						<a href="#">购物流程</a>
-						<a href="#">九机测评</a>
-						<a href="#">积分计划</a>
-					</dd>
-				</dl>
-				<dl>
-					<dt>新手指南</dt>
-					<dd>
-						<a href="#">购物流程</a>
-						<a href="#">九机测评</a>
-						<a href="#">积分计划</a>
-					</dd>
-				</dl>
-				<dl>
-					<dt>新手指南</dt>
-					<dd>
-						<a href="#">购物流程</a>
-						<a href="#">九机测评</a>
-						<a href="#">积分计划</a>
-					</dd>
-				</dl>
-				<dl>
-					<dt>新手指南</dt>
-					<dd>
-						<a href="#">购物流程</a>
-						<a href="#">九机测评</a>
-						<a href="#">积分计划</a>
-					</dd>
-				</dl>
-				<dl>
-					<dt>新手指南</dt>
-					<dd>
-						<a href="#">购物流程</a>
-						<a href="#">九机测评</a>
-						<a href="#">积分计划</a>
-					</dd>
-				</dl>
-			</div>
+	</div>
+	<hr>
+	<div class="foot-help clearfix">
+		<div class="container">
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>新手指南</dt>
+				<dd>
+					<a href="#">购物流程</a>
+					<a href="#">九机测评</a>
+					<a href="#">积分计划</a>
+				</dd>
+			</dl>
 		</div>
-		<!-- footer -->
-		<footer>
-			<div class="container clearfix">
-				<ul>
-					<li class="list_1">
-						<a href="#">常见问题</a><s></s>
-						<a href="#">供应商申请</a><s></s>
-						<a href="#">配送方式</a><s></s>
-						<a href="#">招聘信息</a><s></s>
-						<a href="#">关于我们</a><s></s>
-						<a href="#">联系我们</a><s></s>
-						<a href="#">投诉建议</a><s></s>
-						<a href="#">地区报价</a><s></s>
-						<a href="#">加盟招商</a><s></s>
-						<a href="#">IT服务</a>
-					</li>
-					<li class="list_2">
-						<span>各门店营业时间：周一至周日 09:00-21:30</span>
-						<span>全国服务热线：400-008-3939&nbsp;&nbsp;0871-68393939</span>
-						<span>工作时间：周一至周日 09:00-21:30</span>
-					</li>
-					<li class="list_3">
-						<span>网站ICP备案号：<a href="#">滇ICP备06002001号</a></span>
-						<span>电信业务经营许可证：滇B2-20110012号</span>
-						<span><a href="#">滇公网安备 53010202000261号</a></span>
-					</li>
-					<li class="list_4">
-						<span>Copyright@2006-2018九机网 All RIghts Reserved</span>
-					</li>
-					<li class="list_5">
-						<span>云南九机信息技术有限公司版权所有</span>
-					</li>
-					<li class="list_6">
-						<a href="#" class="s1"></a>
-						<a href="#" class="s2"></a>
-						<a href="#" class="s3"></a>
-						<a href="#" class="s4"></a>
-						<a href="#" class="s5"></a>
-						<a href="#" class="s6"></a>
-					</li>
-				</ul>
-			</div>
-		</footer>
+	</div>
+	<!-- footer -->
+	<footer>
+		<div class="container clearfix">
+			<ul>
+				<li class="list_1">
+					<a href="#">常见问题</a><s></s>
+					<a href="#">供应商申请</a><s></s>
+					<a href="#">配送方式</a><s></s>
+					<a href="#">招聘信息</a><s></s>
+					<a href="#">关于我们</a><s></s>
+					<a href="#">联系我们</a><s></s>
+					<a href="#">投诉建议</a><s></s>
+					<a href="#">地区报价</a><s></s>
+					<a href="#">加盟招商</a><s></s>
+					<a href="#">IT服务</a>
+				</li>
+				<li class="list_2">
+					<span>各门店营业时间：周一至周日 09:00-21:30</span>
+					<span>全国服务热线：400-008-3939&nbsp;&nbsp;0871-68393939</span>
+					<span>工作时间：周一至周日 09:00-21:30</span>
+				</li>
+				<li class="list_3">
+					<span>网站ICP备案号：<a href="#">滇ICP备06002001号</a></span>
+					<span>电信业务经营许可证：滇B2-20110012号</span>
+					<span><a href="#">滇公网安备 53010202000261号</a></span>
+				</li>
+				<li class="list_4">
+					<span>Copyright@2006-2018九机网 All RIghts Reserved</span>
+				</li>
+				<li class="list_5">
+					<span>云南九机信息技术有限公司版权所有</span>
+				</li>
+				<li class="list_6">
+					<a href="#" class="s1"></a>
+					<a href="#" class="s2"></a>
+					<a href="#" class="s3"></a>
+					<a href="#" class="s4"></a>
+					<a href="#" class="s5"></a>
+					<a href="#" class="s6"></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script> 
+	<script src="../lib/jquery.exzoom.js"></script> 
+	<script type="text/javascript">
+		$("#exzoom").exzoom({
+			autoPlay: false,
+			});//方法调用，务必在加载完后执行
+		let goodslist = Cookie.get('goodslist');
+		if(goodslist===''){
+			goodslist=[];
+		}else{
+			goodslist=JSON.parse(goodslist);
+		}
+		let img = goodslist.map((item) => {
+			return item.imgurl;
+		}).join('');
+		$('.exzoom_img_ul li img').attr('src',img);
+	</script>
 </body>
 </html>

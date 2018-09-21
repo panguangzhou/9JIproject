@@ -2,6 +2,13 @@ $(function(){
 	//生成随机验证码
 	let code =randomCode(4);
 	$('.yanzhengCode').text(code);
+
+	// 获取页面数据
+	var _username = $('#username').val();
+	var txt = $('#password').val();
+	var num = $('#number').val();
+	var _num = $('#email').val();
+
 	$('.quick').on('click',function(){
 		$('.registration').addClass('status');
 		$('.quick').removeClass('status');
@@ -22,6 +29,8 @@ $(function(){
 			let data = xhr.responseText;
 			if(data === 'fail'){
 				$('#username').next().text('名字已经被注册');
+			}else{
+				location.href='../html/login.html';
 			}
 		}
 	}
@@ -29,7 +38,7 @@ $(function(){
 	$('#username').on('keyup',function(){
 		var _username = $('#username').val();
 		let reg = /[\w\d]{4,16}/ig;
-			$(this).next().text('');
+		$(this).next().text('');
 		if(!reg.test(_username)){
 			$(this).next().removeClass('glyphicon glyphicon-ok');
 			$(this).next().addClass('glyphicon glyphicon-remove');
@@ -109,13 +118,13 @@ $(function(){
 	$('#register_common').on('click',function(){
 		let paw = $('#password').val();
 		if($('#check').prop('checked')){
-		let _username = $('#username').val();
-		let txt = $('#password').val();
-		let num = $('#number').val();
-		let _num = $('#email').val();
-		xhr.open('get',`../api/reg/php?username=${_username}&password=${txt}
-			&phone=${num}&email=${_num}`,true);
-		xhr.send();
+			var _username = $('#username').val();
+			var txt = $('#password').val();
+			var num = $('#number').val();
+			var _num = $('#email').val();
+			xhr.open('get',`../api/reg.php?username=${_username}&password=${txt}
+				&phone=${num}&email=${_num}`,true);
+			xhr.send();
 		}
 	})
 })

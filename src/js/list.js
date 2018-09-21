@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded',(e) => {
 		xhr.onload = function(){
 			if(statusCode.indexOf(xhr.status)>=0){
 				let data = JSON.parse(xhr.responseText);
-				console.log(data);
 					 			//分页数量
 					 			let len = Math.ceil(data.total/data.qty);
 					 			page.innerHTML='';
@@ -80,7 +79,7 @@ document.addEventListener('DOMContentLoaded',(e) => {
 		}else{
 			goodslist = JSON.parse(goodslist);
 		}
-
+		
 		//判断点击li,获取信息存入对象
 		if(e.target.parentNode.parentNode.tagName==='LI'){
 			let currentLi = e.target.parentNode.parentNode;
@@ -92,10 +91,10 @@ document.addEventListener('DOMContentLoaded',(e) => {
 				title:currentLi.children[2].innerText,
 				imgurl:currentLi.children[0].children[0].src,
 				pingjia:currentLi.children[4].innerText,
+				imgurlmin:currentLi.children[1].children[0].children[0].src,
 				discount:"官网直降200元"
 			};
 			goodslist.push(obj);
-			console.log(goodslist);
 			Cookie.set('goodslist',JSON.stringify(goodslist));
 		}
 	}

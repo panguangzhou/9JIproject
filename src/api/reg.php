@@ -1,42 +1,38 @@
 <?php
 
-	$servername ='localhost';
-	$username = 'root';
-	$password ='';
-	$dbname='jiuji';
+include 'connect.php';
 
-	$conn = new mysqli($servername,$username,$password,$dbname);
-	if($conn->connect_error){
-		die('连接失败'.$conn->connect_error);
-	};
+$username = isset($_GET['username'])?$_GET['username']:null;
+$password = isset($_GET['password'])?$_GET['password']:null;
+$phone = isset($_GET['phone'])?$_GET['phone']:null;
+$email = isset($_GET['email'])?$_GET['email']:null;
+// echo "$username";
+// echo "$password";
+// echo "$phone";
+// echo "$email";
 
-	$user = isset($_GET['username'])?$_GET['username']:null;
-	$paw = isset($_GET['password'])?$_GET['password']:null;
-	$phone = isset($_GET['phone'])?$_GET['phone']:null;
-	$email = isset($_GET['email'])?$_GET['email']:null;
-	$conn->set_charset('utf8');
+$conn->set_charset('utf8');
 
-	if($user&&$paw){
+	$sql = "select * from admin where user='$username'";
 
-		$sql = "select * from admin where user='111'";
-		
+	$result = $conn->query($sql);
+
+	if($result->num_rows>0){
+		echo 'fail';
+	}else{
+		$password = md5($password);
+
+		$sql = "insert into admin(user,paw,email,phone) values('$username','$password','$email','$phone')";
+
+		// $sql = 'insert into admin(user,paw,email,phone) values("12323","14124","14144","141414414")';
+
 		$result = $conn->query($sql);
 
-		if($result->num_rows>0){
-			echo 'fail';
-		}else{
-			$password = md5($password);
-
-			$sql = "insert into admin (user,paw,phonenum,email) values ('$user','$paw','$phone','$email')";
-			$result = $conn->query($sql);
-
-			if($result){
-				echo "success";
-			}else{
-				echo "fail";
-			}
+		if($result){
+			echo "success";
 		}
-	}else{
-		echo "无法获取用户名或密码";
+		else{
+			echo "fail";
+		}
 	}
 ?>
